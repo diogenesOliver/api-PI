@@ -1,0 +1,1 @@
+export const UserInformationMock: Array<Object> = []
