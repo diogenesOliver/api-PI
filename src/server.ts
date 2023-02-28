@@ -1,6 +1,11 @@
 import { app } from "./main";
-const PORT = 8080
+import { dataBaseClientInstance } from "./infra/dataBaseClientIndex";
 
-app.listen(PORT, () => {
+const PORT = process.env.PORT
+
+app.listen(PORT, async () => {
+    
+    await dataBaseClientInstance.connect()
     console.log(`Server running on port: ${PORT}`)
+
 })

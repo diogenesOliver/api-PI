@@ -1,6 +1,8 @@
 import 'reflect-metadata'
 import './shared/index'
 
+require('dotenv').config()
+
 import express from 'express'
 import { routes } from './routes'
 
