@@ -6,6 +6,9 @@ import { SaveUserInformationsRepository } from "../repositories/implementations/
 import { IMailProvider } from '../providers/IMailProvider';
 import { MailProvider } from '../providers/implementation/MailProvider';
 
+import { IGetUsersRepository } from '../repositories/IGetUsersRepository';
+import { GetUsersRepository } from '../repositories/implementations/GetUsersRepository';
+
 container.registerSingleton<ISaveUserInformationsRepository>(
     "SaveUserInformationsRepository",
     SaveUserInformationsRepository
@@ -14,4 +17,9 @@ container.registerSingleton<ISaveUserInformationsRepository>(
 container.registerSingleton<IMailProvider>(
     "MailProvider",
     MailProvider
+)
+
+container.registerSingleton<IGetUsersRepository>(
+    "GetUserRepository",
+    GetUsersRepository
 )
