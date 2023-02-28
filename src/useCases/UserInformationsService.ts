@@ -14,11 +14,11 @@ export class UserInformationsService {
         private mailProviderService: IMailProvider
     ) { }
 
-    execute(data: UserInformationEntitie) {
-        this.informationsService.save(data)
+    async execute(data: UserInformationEntitie) {
+        await this.informationsService.save(data)
         return data
 
-        this.mailProviderService.sendMail({
+       /*  this.mailProviderService.sendMail({
             to: {
                 name: data.props.nome,
                 email: data.props.email
@@ -29,7 +29,7 @@ export class UserInformationsService {
             },
             subject: 'Seja bem-vindo ao SenacFIT',
             body: '<p> Seja bem-vindo a melhor plataforma FIT </p>'
-        })
+        }) */
     }
 
 }
