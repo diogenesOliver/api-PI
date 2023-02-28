@@ -1,10 +1,11 @@
 import { ISaveUserInformationsRepository } from "../IUserInformationRepository";
-import { UserInformationMock } from "../../domain/UserInformationMock";
 import { UserInformationEntitie } from "../../entities/UserInformationEntitie";
 
+import { User } from "../../domain/models/UserModel";
+
 export class SaveUserInformationsRepository implements ISaveUserInformationsRepository{
-    save(datas: UserInformationEntitie): UserInformationEntitie {
-        UserInformationMock.push(datas)
+    async save(datas: UserInformationEntitie): Promise<UserInformationEntitie> {
+        User.create(datas)
         return datas
     }
 }
