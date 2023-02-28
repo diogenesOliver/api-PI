@@ -1,11 +1,8 @@
 interface IUserInformations {
     nome: string,
-    idade: number,
-    telefone: number,
     email: string,
-    peso: number
-    altura: number,
-    sexo: string
+    confirmEmail: string,
+    cpf: string
 }
 
 export class UserInformationEntitie{
