@@ -1,8 +1,8 @@
 import { inject, injectable } from "tsyringe";
 
-import { ISaveUserInformationsRepository } from "../repositories/IUserInformationRepository";
-import { UserInformationEntitie } from "../entities/UserInformationEntitie";
-import { IMailProvider } from "../providers/IMailProvider";
+import { ISaveUserInformationsRepository } from "../../repositories/IUserInformationRepository";
+import { UserInformationEntitie } from "../../entities/UserInformationEntitie";
+import { IMailProvider } from "../../providers/IMailProvider";
 
 @injectable()
 export class UserInformationsService {

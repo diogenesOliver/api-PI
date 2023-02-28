@@ -1,7 +1,7 @@
 import { app } from "./main";
 import { dataBaseClientInstance } from "./infra/dataBaseClientIndex";
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, async () => {
     

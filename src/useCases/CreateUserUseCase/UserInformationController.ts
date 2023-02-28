@@ -1,5 +1,5 @@
 import { Response, Request } from "express";
-import { UserInformationEntitie } from "../entities/UserInformationEntitie";
+import { UserInformationEntitie } from "../../entities/UserInformationEntitie";
 import { UserInformationsService } from "./UserInformationsService";
 
 export class UserInformationsController{

@@ -1,5 +1,5 @@
 import { Request, Response, Router } from "express";
-import { userInformationsControllerInstance } from "./useCases/userInformationIndex";
+import { userInformationsControllerInstance } from "./useCases/CreateUserUseCase/userInformationIndex";
 
 const routes = Router()
 
