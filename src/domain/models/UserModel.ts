@@ -7,12 +7,16 @@ interface IUser {
     cpf: string
 }
 
-const userSchema = new Schema<IUser>({
-    nome: { type: String, require: true },
-    email: { type: String, require: true },
-    confirmEmail: { type: String, require: true },
-    cpf: { type: String, require: true }
-})
+const userSchema = new Schema<IUser>(
+    {
+        nome: { type: String, require: true },
+        email: { type: String, require: true },
+        confirmEmail: { type: String, require: true },
+        cpf: { type: String, require: true }
+    },{
+        timestamps: true
+    }
+)
 
 const User = model<IUser>('User', userSchema)
 
