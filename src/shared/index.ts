@@ -11,6 +11,8 @@ import { GetUsersRepository } from '../repositories/implementations/GetUsersRepo
 
 import { IFitDataRepository } from '../repositories/IFitDataRepository';
 import { FitDataRepository } from '../repositories/implementations/FitDataRepository';
+import { IGetFitDataRepository } from '../repositories/IGetFitDataRepository';
+import { GetFitDataRepository } from '../repositories/implementations/GetFitDataRepository';
 
 container.registerSingleton<ISaveUserInformationsRepository>(
     "SaveUserInformationsRepository",
@@ -30,4 +32,9 @@ container.registerSingleton<IGetUsersRepository>(
 container.registerSingleton<IFitDataRepository>(
     "FitDataRepository",
     FitDataRepository
+)
+
+container.registerSingleton<IGetFitDataRepository>(
+    "GetFitDataRepository",
+    GetFitDataRepository
 )

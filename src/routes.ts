@@ -4,6 +4,7 @@ import { userInformationsControllerInstance } from "./useCases/CreateUserUseCase
 import { getUsersInstance } from "./useCases/GetUsersUseCase/getUsersIndex";
 
 import { insertFitDataInstance } from "./useCases/InsertFitDataUseCase/inserFitDataIndex";
+import { getFitDataInstance } from "./useCases/GetFitDataUseCase/getFitDataIndex";
 
 const routes = Router()
 
@@ -17,6 +18,10 @@ routes.get('/all-users', (req: Request, res: Response) => {
 
 routes.post('/form-fit', (req: Request, res: Response) => {
     return insertFitDataInstance.handle(req, res)
+})
+
+routes.get('/fit-data', (req: Request, res: Response) => {
+    return getFitDataInstance.handle(req, res)
 })
 
 export { routes }

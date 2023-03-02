@@ -1,9 +1,8 @@
-import { FitDataUserEntitie } from "../../entities/FitDataUserEntitie";
-import { IFitDataRepository } from "../IFitDataRepository";
+import { FitData } from "../../domain/models/FitDataUser";
+import { IGetFitDataRepository } from "../IGetFitDataRepository";
 
-export class FitDataRepository implements IFitDataRepository{
-    async insertFitData(fitData: FitDataUserEntitie): Promise<FitDataUserEntitie> {
-        
-        return fitData
+export class GetFitDataRepository implements IGetFitDataRepository{
+    async getFitData(): Promise<any> {
+        return await FitData.find()
     }
 }
