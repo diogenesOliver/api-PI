@@ -9,6 +9,9 @@ import { MailProvider } from '../providers/implementation/MailProvider';
 import { IGetUsersRepository } from '../repositories/IGetUsersRepository';
 import { GetUsersRepository } from '../repositories/implementations/GetUsersRepository';
 
+import { IFitDataRepository } from '../repositories/IFitDataRepository';
+import { FitDataRepository } from '../repositories/implementations/FitDataRepository';
+
 container.registerSingleton<ISaveUserInformationsRepository>(
     "SaveUserInformationsRepository",
     SaveUserInformationsRepository
@@ -22,4 +25,9 @@ container.registerSingleton<IMailProvider>(
 container.registerSingleton<IGetUsersRepository>(
     "GetUserRepository",
     GetUsersRepository
+)
+
+container.registerSingleton<IFitDataRepository>(
+    "FitDataRepository",
+    FitDataRepository
 )
