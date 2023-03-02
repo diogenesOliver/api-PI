@@ -3,6 +3,8 @@ import { Request, Response, Router } from "express";
 import { userInformationsControllerInstance } from "./useCases/CreateUserUseCase/userInformationIndex";
 import { getUsersInstance } from "./useCases/GetUsersUseCase/getUsersIndex";
 
+import { insertFitDataInstance } from "./useCases/InsertFitDataUseCase/inserFitDataIndex";
+
 const routes = Router()
 
 routes.post('/user-form', (req: Request, res: Response) => {
@@ -11,6 +13,10 @@ routes.post('/user-form', (req: Request, res: Response) => {
 
 routes.get('/all-users', (req: Request, res: Response) => {
     return getUsersInstance.handle(req, res)
+})
+
+routes.post('/form-fit', (req: Request, res: Response) => {
+    return insertFitDataInstance.handle(req, res)
 })
 
 export { routes }
