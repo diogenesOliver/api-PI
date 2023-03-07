@@ -4,3 +4,5 @@ tsconfig.json
 .gitpod.yml
 
 .env
+
+jest.config.ts
