@@ -5,7 +5,7 @@ import { User } from "../../domain/models/UserModel";
 
 export class SaveUserInformationsRepository implements ISaveUserInformationsRepository{
     async save(datas: UserInformationEntitie): Promise<UserInformationEntitie> {
-        User.create(datas)
+        await User.create(datas)
         return datas
     }
 }
