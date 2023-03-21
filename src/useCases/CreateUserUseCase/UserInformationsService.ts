@@ -17,19 +17,6 @@ export class UserInformationsService {
     async execute(data: UserInformationEntitie) {
         await this.informationsService.save(data)
         return data
-
-       /*  this.mailProviderService.sendMail({
-            to: {
-                name: data.props.nome,
-                email: data.props.email
-            },
-            from: {
-                name: 'Equipe do meu app',
-                email: 'diogenes.riboliveira@gmail.com'
-            },
-            subject: 'Seja bem-vindo ao SenacFIT',
-            body: '<p> Seja bem-vindo a melhor plataforma FIT </p>'
-        }) */
     }
 
 }
