@@ -14,13 +14,13 @@
 
 <br>
 
-- [] Clean Architecture
-- [] S-OLID Single Responsability
-- [] Integração Node + TypeScript
-- [] Injeção de Dependência
-- [] Testes unitários
-- [] Testes de integração
-- [] Conexão com banco de dados MongDB
+- [x] Clean Architecture
+- [x] S-OLID Single Responsability
+- [x] Integração Node + TypeScript
+- [x] Injeção de Dependência
+- [x] Testes unitários
+- [x] Testes de integração
+- [x] Conexão com banco de dados MongDB
 
 ****
 
