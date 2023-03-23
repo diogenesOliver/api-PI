@@ -10,12 +10,10 @@ export class UserInformationsService {
     constructor(
         @inject("SaveUserInformationsRepository")
         private informationsService: ISaveUserInformationsRepository,
-        @inject("MailProvider")
-        private mailProviderService: IMailProvider
     ) { }
 
-    async execute(data: UserInformationEntitie) {
-        await this.informationsService.save(data)
+    execute(data: UserInformationEntitie) {
+        this.informationsService.save(data)
         return data
     }
 
