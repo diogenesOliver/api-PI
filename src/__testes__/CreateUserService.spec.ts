@@ -16,8 +16,8 @@ describe('Create User', () => {
     const userInformationsTest = userInformatioService.execute(userInstance)
 
     it('E-mail and confirmation e-mail must be the same', () => {
-        expect((userInformationsTest.data.props.confirmEmail))
-            .toEqual((userInformationsTest.data.props.confirmEmail))
+        expect((userInformationsTest.data?.props.confirmEmail))
+            .toEqual((userInformationsTest.data?.props.confirmEmail))
     })
 
     it('Must contain DATA property', () => {
