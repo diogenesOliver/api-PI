@@ -6,9 +6,11 @@ import { getUsersInstance } from "./useCases/GetUsersUseCase/getUsersIndex";
 import { insertFitDataInstance } from "./useCases/InsertFitDataUseCase/inserFitDataIndex";
 import { getFitDataInstance } from "./useCases/GetFitDataUseCase/getFitDataIndex";
 
+import { createUserValidate } from "./domain/middleware/MiddlewareValidation";
+
 const routes = Router()
 
-routes.post('/user-form', (req: Request, res: Response) => {
+routes.post('/user-form', createUserValidate.validate, (req: Request, res: Response) => {
     return userInformationsControllerInstance.handle(req, res)
 })
 
