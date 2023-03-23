@@ -3,9 +3,9 @@ import { UserInformationEntitie } from "../../entities/UserInformationEntitie";
 
 import { User } from "../../domain/models/UserModel";
 
-export class SaveUserInformationsRepository implements ISaveUserInformationsRepository{
-    async save(datas: UserInformationEntitie): Promise<UserInformationEntitie> {
-        await User.create(datas)
+export class SaveUserInformationsRepository implements ISaveUserInformationsRepository {
+    save(datas: UserInformationEntitie): UserInformationEntitie {
+        User.create(datas)
         return datas
     }
 }
