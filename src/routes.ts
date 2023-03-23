@@ -7,6 +7,7 @@ import { insertFitDataInstance } from "./useCases/InsertFitDataUseCase/inserFitD
 import { getFitDataInstance } from "./useCases/GetFitDataUseCase/getFitDataIndex";
 
 import { createUserValidate } from "./domain/middleware/MiddlewareValidation";
+import { insertFitDataValidate } from "./domain/middleware/MiddlewareFitDataValidation";
 
 const routes = Router()
 
@@ -18,7 +19,7 @@ routes.get('/all-users', (req: Request, res: Response) => {
     return getUsersInstance.handle(req, res)
 })
 
-routes.post('/form-fit', (req: Request, res: Response) => {
+routes.post('/form-fit', insertFitDataValidate.validate, (req: Request, res: Response) => {
     return insertFitDataInstance.handle(req, res)
 })
 
