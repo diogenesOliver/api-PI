@@ -13,8 +13,18 @@ export class UserInformationsService {
     ) { }
 
     execute(data: UserInformationEntitie) {
-        this.informationsService.save(data)
-        return data
+        try {
+            this.informationsService.save(data)
+
+            return {
+                data: data,
+                statuscode: 201
+            }
+        } catch (statuscode) {
+            return {
+                statuscode: 404
+            }
+        }
     }
 
 }
