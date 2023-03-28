@@ -11,7 +11,7 @@ export class InsertFitDataService{
     ){}
 
     async execute(fitData: FitDataUserEntitie){
-        await this.fitDataService.insertFitData(fitData)
+        return await this.fitDataService.insertFitData(fitData)
     }
 
 }
