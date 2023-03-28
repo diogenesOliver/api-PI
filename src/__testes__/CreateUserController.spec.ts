@@ -18,9 +18,7 @@ describe('Integration test/user-form',  () => {
     })
 })
 
-/* Não tem validação implemetadas */
-
-/* describe('Testing ERROR', () => {
+describe('Testing ERROR', () => {
     test('Should be able create a new User', async () => {
         const response = await request(app)
         .post('/user-form')
@@ -28,4 +26,4 @@ describe('Integration test/user-form',  () => {
 
         expect(response.statusCode).toEqual(404)
     })
-}) */
+})
