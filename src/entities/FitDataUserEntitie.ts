@@ -2,7 +2,7 @@ interface IFitDataInformations{
     peso: number,
     altura: number,
     restricaoAlimentar: string,
-    restricaoFisicia: string,
+    restricaoFisica: string,
     nivel: string
 }
 
