@@ -3,15 +3,15 @@ import { FitDataUserEntitie } from "../../entities/FitDataUserEntitie";
 import { IFitDataRepository } from "../../repositories/IFitDataRepository";
 
 @injectable()
-export class InsertFitDataService{
+export class InsertFitDataService {
 
     constructor(
         @inject("FitDataRepository")
-        private fitDataService: IFitDataRepository 
-    ){}
+        private fitDataService: IFitDataRepository
+    ) { }
 
-    async execute(fitData: FitDataUserEntitie){
-        return await this.fitDataService.insertFitData(fitData)
+    execute(fitData: FitDataUserEntitie) {
+        return this.fitDataService.insertFitData(fitData)
     }
 
 }
