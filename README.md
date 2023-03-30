@@ -1,4 +1,7 @@
 <h2>PI - Projeto integrador SENAC RS</h2>
+<br>
+
+<img src="./readmeImages/MY.png" style="align: center" height="150" width="300">
 
 <br>
 
