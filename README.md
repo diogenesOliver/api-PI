@@ -83,9 +83,8 @@
 <br>
 
 - <h3>GET /all-users</h3>
-<p>Retorna JSON com todos os uauário cadastrados no sistema</p>
+<p>Retorna JSON com todos os usuário cadastrados no sistema</p>
 
-<br>
 
 - <h3>GET /fit-data</h3>
 <p>Retorna JSON com todos os dados FIT dos usuários</p>
