@@ -24,6 +24,7 @@
 - [x] Testes unitários
 - [x] Testes de integração
 - [x] Conexão com banco de dados MongDB
+- [x] CI/CD NodeJS
 
 ****
 
