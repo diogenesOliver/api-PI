@@ -4,8 +4,6 @@ tsconfig.json
 .gitpod.yml
 .env
 
-jest.config.ts
-
 coverage
 
 secrete-key.json
