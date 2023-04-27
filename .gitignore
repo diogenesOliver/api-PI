@@ -9,3 +9,6 @@ coverage
 secrete-key.json
 
 prisma/migrations
+
+database-postgres-apiPI
+aws-terraform-apiPI
