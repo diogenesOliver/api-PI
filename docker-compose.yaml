@@ -12,18 +12,6 @@ services:
     environment:
       POSTGRES_USER: "${POSTGRES_USER}"
       POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
-  
-  aws-terraform-image-iac:
-    image: hashicorp/terraform:latest
-    volumes:
-      - .:/infra
-    working_dir: /infra
-    container_name: "aws-terraform-iac"
-    environment:
-      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
-      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-      AWS_REGION: "${AWS_REGION}"
 
 volumes:
   db-postgres-evento:
-  aws-terraform-image-iac:
