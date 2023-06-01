@@ -7,26 +7,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model UserLogin {
-  id        Int        @id @default(autoincrement())
-  email     String     @unique
-  senha     String     @unique
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  UserData  UserData[]
-}
-
 model UserData {
-  id            Int        @id @default(autoincrement())
-  nome          String     @unique
+  id        Int        @id @default(autoincrement())
+  email         String
+  senha         String
+  nome          String @unique
   idade         Int
   peso          Float
   altura        Float
   res_fisica    String
   res_alimentar String
   nivel         String
-  author        UserLogin? @relation(fields: [authorId], references: [id])
-  authorId      Int?
 }
 
 model Exercicios {
