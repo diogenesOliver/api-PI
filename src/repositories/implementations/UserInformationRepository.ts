@@ -5,9 +5,9 @@ import { User } from "../../domain/models/UserModel";
 
 import { ISaveFunctionGeneric } from '../GenericRepository'
 
-/* export class SaveUserInformationsRepository implements ISaveUserInformationsRepository {
+export class SaveUserInformationsRepository implements ISaveUserInformationsRepository {
     save(datas: UserInformationEntitie): UserInformationEntitie {
         User.create(datas)
         return datas
     }
-} */
+}
