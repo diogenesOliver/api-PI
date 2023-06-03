@@ -1,13 +1,29 @@
+.DS_Store
 node_modules
-tsconfig.json
+/dist
 
-.gitpod.yml
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend files
 .env
+database-postgres-apiPi
 
-jest.config.ts
-
-coverage
-
-secrete-key.json
-
-database-postgres-apiPI
+prisma/migrations
