@@ -6,7 +6,7 @@
 <br>
 
 <p>
-    Este repositório representa a API Backend do projeto integrador do Senac-RS 
+    Este repositório foi criado para fins do projeto de Projeto Intregador do SENACH TECH, contendo Front-End, API Backend e Banco de Dados.
 </p>
 
 <br>
