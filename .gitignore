@@ -21,3 +21,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Backend files
+.env
+database-postgres-apiPi
+
+prisma/migrations
