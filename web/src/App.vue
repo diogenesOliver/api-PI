@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <Home />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
+
   </div>
 </template>
 
@@ -48,11 +51,6 @@ body {
   list-style: none;
   text-decoration: none;
 }
-
-/* .header-wrapper {
-  margin: 0 auto;
-  width: 1450px;
-} */
 
 .fade-enter,
 .fade-leave-to {

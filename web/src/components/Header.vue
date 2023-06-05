@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <img src="@/assets/logo.png" alt="" />
+      <img src="@/assets/imgs/logo.png" alt="" />
     </div>
     <nav>
       <ul>
@@ -9,24 +9,31 @@
         <li>Objetivos</li>
         <li>Inscrever-se</li>
         <li>Contato</li>
+        <li></li>
       </ul>
     </nav>
+    <div class="login">
+      <router-link to="/register">
+        <button>Cadastre-se</button>
+      </router-link>
+      <button>Login</button>
+    </div>
   </header>
-  </template>
+</template>
   
-    <script>
+<script>
   export default {
     name: "Header",
   };
   </script>
   
-    <style scoped>
+<style scoped>
   header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
-    background: hsl(210, 17%, 9%);
+    background: #13171b;
   }
 
   ul {
@@ -40,6 +47,7 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 400ms;
@@ -49,8 +57,30 @@
     background: #c9d6d4;
     color: rgba(0, 0, 0, 0.7);
   }
+
+  .login {
+    display: flex;
+    gap: 2rem
+  }
+
+  button {
+    font-family: var(--font-montserrat);
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  button:hover {
+    background: #33383d;
+  }
   
   img {
     width: 13rem;
   }
-  </style>
+</style>
