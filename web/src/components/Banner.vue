@@ -3,21 +3,21 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/carousel/carousel-gym-1-p.jpg" alt="...">
+          <img src="@/assets/carousel/carousel-gym-1-p.jpg" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem Ipsum</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/carousel/carousel-gym-2-p.jpg" alt="...">
+          <img src="@/assets/carousel/carousel-gym-2-p.jpg" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem Ipsum</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/carousel/carousel-food-3-p.jpg" alt="...">
+          <img src="@/assets/carousel/carousel-food-3-p.jpg" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem Ipsum</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
