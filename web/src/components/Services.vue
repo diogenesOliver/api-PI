@@ -11,7 +11,7 @@
             <a href="#">Inscreva-se</a>
         </div>
         <div class="services-box">
-            <img src="../assets/imgs/lose-w.jpg" alt="">
+            <img src="@/assets/imgs/lose-w.jpg" alt="">
             <h3>Emagrecimento</h3>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam expedita id, sapiente molestias eaque voluptatem libero accusamus voluptatum harum dolor maxime incidunt architecto quis cupiditate fugiat provident iusto nisi iste!
