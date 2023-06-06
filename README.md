@@ -6,7 +6,7 @@
 
 <strong>UserData</strong>
 
-```
+```prisma
 model UserData {
   id        Int        @id @default(autoincrement())
   email         String
@@ -24,7 +24,7 @@ model UserData {
 
 <strong>Exercises</strong>
 
-```
+```prisma
 model Exercicios {
   id              Int    @id @default(autoincrement())
   nome_exerc      String @unique
@@ -35,7 +35,7 @@ model Exercicios {
 <br>
 
 <strong>Alimentation</strong>
-```
+```prisma
 model Alimentacao {
   id               Int    @id @default(autoincrement())
   nome_alimentacao String
