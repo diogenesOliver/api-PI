@@ -16,7 +16,9 @@
       <router-link to="/register">
         <button>Cadastre-se</button>
       </router-link>
-      <button>Login</button>
+      <router-link to="/login">
+        <button>Login</button>
+      </router-link>
     </div>
   </header>
 </template>
