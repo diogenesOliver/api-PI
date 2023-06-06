@@ -8,16 +8,17 @@
 
 ```prisma
 model UserData {
-  id        Int        @id @default(autoincrement())
-  email         String
-  senha         String
-  nome          String @unique
-  idade         Int
-  peso          Float
-  altura        Float
-  res_fisica    String
-  res_alimentar String
-  nivel         String
+  id              Int        @id @default(autoincrement())
+  email           String
+  confirmar_email String
+  senha           String
+  confirmar_senha String
+  nome            String @unique
+  idade           Int
+  peso            Float
+  altura          Float
+  res_fisica      String
+  res_alimentar   String
 }
 ```
 <br>
