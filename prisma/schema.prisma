@@ -17,7 +17,6 @@ model UserData {
   altura        Float
   res_fisica    String
   res_alimentar String
-  nivel         String
 }
 
 model Exercicios {
