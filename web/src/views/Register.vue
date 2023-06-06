@@ -1,5 +1,8 @@
 <template>
   <section>
+    <router-link to="/">
+        <img class="close-icon" src="@/assets/icons/close_white_48dp.svg" alt="">
+    </router-link>
     <div class="img-box">
         <img src="@/assets/imgs/woman-background.jpg" alt="">
     </div>
@@ -12,49 +15,32 @@
         <form name="contact" class="contact-inform form">
 			<div class="form-control">
 				<input type="text" name="name" class="form-input" placeholder="none" required>
-				<label for="name" class="form-label">Name</label>
+				<label for="name" class="form-label">Nome</label>
 			</div>
-			<div class="form-control">
-				<input type="email" name="email" class="form-input" placeholder="none" required>
-				<label for="email" class="form-label">Email</label>
-			</div>
-			<div class="form-control">
-				<input type="password" name="password" class="form-input" placeholder="none" required>
-				<label for="password" class="form-label">Password</label>
-			</div>
+            <div class="input-columns">
+                <div class="form-control">
+                    <input type="email" name="email" class="form-input" placeholder="none" required>
+                    <label for="email" class="form-label">Email</label>
+			    </div>
+                <div class="form-control">
+                    <input type="email" name="email" class="form-input" placeholder="none" required>
+                    <label for="email" class="form-label">Confirmar E-mail</label>   
+                </div>
+            </div>
+            <div class="input-columns">
+                <div class="form-control">
+                    <input type="password" name="password" class="form-input" placeholder="none" required>
+                    <label for="password" class="form-label">Senha</label>
+			    </div>
+                <div class="form-control">
+                    <input type="password" name="password" class="form-input" placeholder="none" required>
+                    <label for="password" class="form-label">Confirmar Senha</label>
+			    </div>
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Cadastrar">
+            </div>
 		</form>
-
-        <!-- <form action="#">
-            <div class="input-box field">
-                <input type="text" id="name" placeholder="Digite seu nome completo">
-                <label for="name">Nome Completo</label>
-            </div>
-
-            <div class="input-columns">
-                <div class="input-box email-area field">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Digite seu e-mail">
-                </div>
-                <div class="input-box email-area field">
-                    <label for="confirmEmail">Confirmar Email</label>
-                    <input type="text" id="confirmEmail" placeholder="Confirme seu e-mail">
-                </div>
-            </div>
-
-            <div class="input-columns">
-                <div class="input-box email-area">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="*********">
-                </div>
-                <div class="input-box email-area">
-                    <label for="confirmEmail">Confirmar Senha</label>
-                    <input type="password" id="confirmPassword" placeholder="*********">
-                </div>
-            </div>
-        </form>
-
-        -->
-        
     </div>
   </section>
 </template>
@@ -65,13 +51,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     section {
+        position: relative;
         display: flex;
         width: 100%;
         height: 100vh;
     }
 
+    .close-icon {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+    
     .img-box {
         height: 100%;
         border: none;
@@ -105,40 +98,14 @@ export default {
         max-width: 500px;
     }
 
-    /* form {
-        width: 50%;
-    }
-
-    .input-box {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-    }
-
-
-
-     .input-box label {
-        font-size: .80rem;
-        font-weight: 700;
-        color: rgba(255, 255, 255, 0.7);
-        text-transform: uppercase;
-    }
-
-    .input-box input {
-        padding: 1rem .55rem;
-        background-color: #f5f5f5;
-        border: 1px solid rgba(0, 0, 0, 0.7);
-        border-radius: 5px;
-        outline: none;
-    }
-
-    input:hover {
-        background: #e2eeee;
-        transition: 200ms;
-    } */
     form {
         width: 50%;
+    }
+
+    .input-columns {
+        display: flex;
+        gap: 1rem;
+        margin: .80rem 0;
     }
 
     .form-control {
@@ -226,11 +193,24 @@ export default {
         background: #fff;
     }
 
-    /* .input-columns {
+    .submit-button {
         display: flex;
-        gap: 1rem;
-        margin: .80rem 0;
+        justify-content: center;
     }
 
-    */
+    input[type=submit] {
+        padding: .5rem 1rem;
+        width: 50%;
+        background: #151515;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        transition: 200ms;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background: #2c2a2a;
+    }
 </style>
