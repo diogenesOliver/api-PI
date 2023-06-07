@@ -1,6 +1,6 @@
 import { CreateUserController } from "./CreateUserController";
 import { CreateUserService } from "./CreateUserService";
 
-export const createUserControllerInstance = new CreateUserController(
+export const createUserInstance = new CreateUserController(
     new CreateUserService()
 )
