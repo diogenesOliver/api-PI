@@ -7,6 +7,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Lorem Ipsum</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
+            <button>TESTE</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -45,7 +46,6 @@ export default {
 <style scoped>
 .banner {
   height: 70vh !important;
-  background: dodgerblue;
 }
 
 .carousel{
