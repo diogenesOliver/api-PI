@@ -11,14 +11,10 @@ export class CreateUserController {
         const userData: UserData = req.body
         this.createUserService.save(userData)
 
-        if (userData.email != userData.confirmar_email){
+        if (userData.email != userData.confirmar_email || userData.senha != userData.confirmar_senha)
             res.status(404).send('ERROR in password or Email')
-        }else if(userData.senha != userData.confirmar_senha){
-            res.status(404).send('ERROR in password or Email')
-        }else{
-            res.status(200).send('Succesfuly to creta User')
-        }
-            return userData
-        
+
+        res.status(200).send('Succesfuly to creta User')
+        return userData
     }
 }
