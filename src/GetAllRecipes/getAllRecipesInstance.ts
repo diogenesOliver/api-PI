@@ -1,5 +1,5 @@
 import { GetAlimentationsController } from "./GetAllRecipesController";
-import { GetAlimentationsService } from "./GetAllRecipesService";
+import { GetAlimentationsService } from "../repositories/GetAllRecipesService";
 
 export const getAlimentationInstance = new GetAlimentationsController(
     new GetAlimentationsService()

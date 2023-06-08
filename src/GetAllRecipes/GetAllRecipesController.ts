@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { GetAlimentationsService } from "./GetAllRecipesService";
+import { GetAlimentationsService } from "../repositories/GetAllRecipesService";
 
 export class GetAlimentationsController{
     constructor(

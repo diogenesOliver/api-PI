@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { GetExercisesService } from "./GetExercisesService"
+import { GetExercisesService } from "../repositories/GetExercisesService"
 
 export class GetExercisesController{
     constructor(
