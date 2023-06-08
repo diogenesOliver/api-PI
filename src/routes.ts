@@ -3,6 +3,7 @@ import { Request, Response, Router } from "express";
 import { createUserInstance } from "./CreateUser/createUserInstance";
 import { getUserInstance } from "./GetAllUsers/getUserInstance"
 import { getExercisesInstance } from "./GetAllExercises/getExercisesInstance"
+import { getAlimentationInstance } from './GetAllRecipes/getAllRecipesInstance'
 
 const routes = Router()
 
@@ -16,6 +17,10 @@ routes.get('/users', (req: Request, res: Response) => {
 
 routes.get('/exercises', (req: Request, res: Response) => {
     return getExercisesInstance.getExercisesController(req, res)
+})
+
+routes.get('/recipes', (req: Request, res: Response) => {
+    return getAlimentationInstance.getUserController(req, res)
 })
 
 export { routes }
