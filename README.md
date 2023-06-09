@@ -1,93 +1,46 @@
-<h2>PI - Projeto integrador SENAC RS</h2>
+# Documentation - WIP
+
+## Tables
 <br>
 
-<img src="./readmeImages/MY.png" style="align: center" height="150" width="300">
 
-<br>
+<strong>UserData</strong>
 
-<p>
-    Este repositório foi criado para fins do projeto de Projeto Intregador do SENACH TECH, contendo Front-End, API Backend e Banco de Dados.
-</p>
-
-<br>
-
-****
-
-- <h3>Conceitos e implementações no Backend</h3>
-
-<br>
-
-- [x] Clean Architecture
-- [x] S-OLID Single Responsability
-- [x] Integração Node + TypeScript
-- [x] Injeção de Dependência
-- [x] Testes unitários
-- [x] Testes de integração
-- [x] Conexão com banco de dados MongDB
-
-****
-
-<br>
-
-- <p>Instalar todas as dependências</p>
-
-``npm install -y``
-
-- <p>Subir o servidor express</p>
-
-``npm run dev``
-
-- <p>Rodar os testes implementados</p>
-
-``npm test``
-
-***
-
-<br>
-
-<strong> Para conectar ao banco de dados é necessário ter as permissões do MongoDB Atlas no arquivo .env</strong>
-
-<br>
-
-<h2>Wip: Rotas implementadas do servidor</h2>
-<br>
-
-- <h3>POST /user-form</h3>
-
-<p>Rota POST onde o usuário vai inserir os dados pessoais</p>
-
-```js
-
-    interface IUser {
-        nome: string,
-        email: string,
-        confirmEmail: string,
-        cpf: string
-    }
-
+```prisma
+model UserData {
+  id              Int        @id @default(autoincrement())
+  email           String
+  confirmar_email String
+  senha           String
+  confirmar_senha String
+  nome            String @unique
+  idade           Int
+  peso            Float
+  altura          Float
+  res_fisica      String
+  res_alimentar   String
+}
 ```
 <br>
 
-- <h3>POST /form-fit</h3>
+<strong>Exercises</strong>
 
-<p>Rota POST onde o usuário vai inserir os dados relacionados a sua saúde</p>
-
-```js
-
-    interface IFitData{
-        peso: number,
-        altura: number,
-        restricaoAlimentar: string,
-        restricaoFisica: string,
-        nivel: string
-    }
-
+```prisma
+model Exercicios {
+  id              Int    @id @default(autoincrement())
+  nome_exerc      String @unique
+  descricao_exerc String
+  tipo_exerc      String
+}
 ```
 <br>
 
-- <h3>GET /all-users</h3>
-<p>Retorna JSON com todos os usuário cadastrados no sistema</p>
-
-
-- <h3>GET /fit-data</h3>
-<p>Retorna JSON com todos os dados FIT dos usuários</p>
+<strong>Alimentation</strong>
+```prisma
+model Alimentacao {
+  id               Int    @id @default(autoincrement())
+  nome_alimentacao String
+  descricao        String
+  tipo_dieta       String
+}
+```
