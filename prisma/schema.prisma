@@ -8,29 +8,35 @@ datasource db {
 }
 
 model UserData {
-  id              Int    @id @default(autoincrement())
+  id              Int           @id @default(autoincrement())
   email           String
   confirmar_email String
   senha           String
   confirmar_senha String
-  nome            String @unique
+  nome            String        @unique
   idade           Int
   peso            Float
   altura          Float
   res_fisica      String
   res_alimentar   String
+  Exercicios      Exercicios[]
+  Alimentacao     Alimentacao[]
 }
 
 model Exercicios {
-  id              Int    @id @default(autoincrement())
-  nome_exerc      String @unique
+  id              Int      @id @default(autoincrement())
+  nome_exerc      String   @unique
   descricao_exerc String
   tipo_exerc      String
+  exerc_relacao   UserData @relation(fields: [exercId], references: [id])
+  exercId         Int
 }
 
 model Alimentacao {
-  id               Int    @id @default(autoincrement())
+  id               Int      @id @default(autoincrement())
   nome_alimentacao String
   descricao        String
   tipo_dieta       String
+  receita_relacao  UserData @relation(fields: [alimentacaoId], references: [id])
+  alimentacaoId    Int
 }
