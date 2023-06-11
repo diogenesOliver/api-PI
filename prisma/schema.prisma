@@ -9,11 +9,11 @@ datasource db {
 
 model UserData {
   id              Int           @id @default(autoincrement())
-  email           String
+  email           String        @unique
   confirmar_email String
   senha           String
   confirmar_senha String
-  nome            String        @unique
+  nome            String
   idade           Int
   peso            Float
   altura          Float
@@ -34,7 +34,7 @@ model Exercicios {
 
 model Alimentacao {
   id               Int      @id @default(autoincrement())
-  nome_alimentacao String
+  nome_alimentacao String   @unique
   descricao        String
   tipo_dieta       String
   receita_relacao  UserData @relation(fields: [alimentacaoId], references: [id])
