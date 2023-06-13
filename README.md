@@ -1,6 +1,13 @@
-# Documentation - WIP
+# Documentação - WIP
 
-## Tables
+## API
+<br>
+
+<p>
+Aqui temos a documentação relacionada apena ao beckend do projeto, desde a clonagem do projeto, inicialização do servidor, inicialização do container Docker do banco de dados e tecnologia utilizadas para configura a API.
+</p>
+
+## Tabelas
 <br>
 
 
@@ -19,11 +26,13 @@ model UserData {
   altura          Float
   res_fisica      String
   res_alimentar   String
+  Exercicios      Exercicios[]
+  Alimentacao     Alimentacao[]
 }
 ```
 <br>
 
-<strong>Exercises</strong>
+<strong>Exercícios</strong>
 
 ```prisma
 model Exercicios {
@@ -31,16 +40,20 @@ model Exercicios {
   nome_exerc      String @unique
   descricao_exerc String
   tipo_exerc      String
+  exerc_relacao   UserData @relation(fields: [exercId], references: [id])
+  exercId         Int
 }
 ```
 <br>
 
-<strong>Alimentation</strong>
+<strong>Alimentação</strong>
 ```prisma
 model Alimentacao {
   id               Int    @id @default(autoincrement())
   nome_alimentacao String
   descricao        String
   tipo_dieta       String
+  receita_relacao  UserData @relation(fields: [alimentacaoId], references: [id])
+  alimentacaoId    Int
 }
 ```
