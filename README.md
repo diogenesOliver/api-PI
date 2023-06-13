@@ -10,13 +10,13 @@ Aqui temos a documentação relacionada apena ao beckend do projeto, desde a clo
 Abaixo temos as principais tecnologia que utilizamos para criar e configurar nossa API
 </p>
 
-- <p><strong>Express</strong> para criação e manipulação de rotas e métodos HTTP <strong>(GET, POST)</strong> </p>
+- `Express` para criação e manipulação de rotas e métodos HTTP <strong>(GET, POST)</strong> </p>
 
-- <p><strong>Docker</strong> para gerenciamneto de containers, hospedando nossa api no <strong>localhos:3000</strong> e nosso banco de dados</p>
+- `Docker` para gerenciamneto de containers, hospedando nossa api no <strong>localhos:3000</strong> e nosso banco de dados</p>
 
-- <p><strong>Postgres</strong> banco de dados relacional escolhido para armazenar os dados das requizições</p>
+- `Postgres` banco de dados relacional escolhido para armazenar os dados das requizições</p>
 
-- <p><strong>Prisma</strong> ORM utilizado para configurar o banco de dados e suas tabelas integrando com o Node</p>
+- `Prisma` ORM utilizado para configurar o banco de dados e suas tabelas integrando com o Node</p>
 
 - <p><strong>Typescript</strong> linguagem de programação utilizada em toda API</p>
 
