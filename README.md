@@ -1,16 +1,12 @@
 # Documentação - WIP
 
 ## API
-<br>
-
 <p>
 Aqui temos a documentação relacionada apena ao beckend do projeto, desde a clonagem do projeto, inicialização do servidor, inicialização do container Docker do banco de dados e tecnologia utilizadas para configura a API.
 </p>
 
 ## Tabelas
 <br>
-
-
 <strong>UserData</strong>
 
 ```prisma
