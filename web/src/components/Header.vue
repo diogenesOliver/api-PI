@@ -22,67 +22,67 @@
     </div>
   </header>
 </template>
-  
+
 <script>
-  export default {
-    name: "Header",
-  };
-  </script>
-  
+export default {
+  name: "Header",
+};
+</script>
+
 <style scoped>
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background: #13171b;
-  }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #13171b;
+}
 
-  ul {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  li {
-    font-family: var(--font-montserrat);
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 400ms;
-  }
-  
-  li:hover {
-    background: #c9d6d4;
-    color: rgba(0, 0, 0, 0.7);
-  }
+ul {
+  display: flex;
+  gap: 2rem;
+}
 
-  .login {
-    display: flex;
-    gap: 2rem
-  }
+li {
+  font-family: var(--font-montserrat);
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+}
 
-  button {
-    font-family: var(--font-montserrat);
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    background: transparent;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 400ms;
-  }
+li:hover {
+  background: #c9d6d4;
+  color: rgba(0, 0, 0, 0.7);
+}
 
-  button:hover {
-    background: #33383d;
-  }
-  
-  img {
-    width: 13rem;
-  }
+.login {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  font-family: var(--font-montserrat);
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+button:hover {
+  background: #33383d;
+}
+
+img {
+  width: 13rem;
+}
 </style>

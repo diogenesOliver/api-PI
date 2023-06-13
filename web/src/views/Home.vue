@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import About from '@/components/About.vue';
-import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
-import Goals from '@/components/Goals.vue';
-import Footer from '@/components/Footer.vue';
-import Services from '@/components/Services.vue';
+import About from "@/components/About.vue";
+import Header from "@/components/Header.vue";
+import Banner from "@/components/Banner.vue";
+import Goals from "@/components/Goals.vue";
+import Footer from "@/components/Footer.vue";
+import Services from "@/components/Services.vue";
 export default {
-  name: 'Home',
+  name: "Home",
 
   components: {
     Header,
@@ -25,8 +25,7 @@ export default {
     Goals,
     Footer,
     About,
-    Services
-  }
-
-}
+    Services,
+  },
+};
 </script>

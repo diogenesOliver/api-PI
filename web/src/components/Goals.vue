@@ -3,16 +3,16 @@
     <div class="goal-box">
       <div class="goals-box">
         <div class="goal-title">
-          <img src="@/assets/icons/treino.png" alt="">
+          <img src="@/assets/icons/treino.png" alt="" />
           <h2>Treinamentos</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-          suscipit autem magnam, dolore sequi cum vitae nesciunt possimus non
-          temporibus dolorum animi voluptatem aliquam pariatur harum laborum,
-          incidunt voluptate assumenda? Perferendis mollitia dignissimos at
-          illo impedit dolore, ullam aliquid ut omnis id quibusdam iure odit
-          excepturi nesciunt enim perspiciatis earum.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
+          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
+          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
+          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
+          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
+          nesciunt enim perspiciatis earum.
         </p>
       </div>
       <div class="goals-box">
@@ -24,12 +24,12 @@
           <h2>Alimentação</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-          suscipit autem magnam, dolore sequi cum vitae nesciunt possimus non
-          temporibus dolorum animi voluptatem aliquam pariatur harum laborum,
-          incidunt voluptate assumenda? Perferendis mollitia dignissimos at
-          illo impedit dolore, ullam aliquid ut omnis id quibusdam iure odit
-          excepturi nesciunt enim perspiciatis earum.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
+          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
+          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
+          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
+          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
+          nesciunt enim perspiciatis earum.
         </p>
       </div>
     </div>
@@ -43,12 +43,12 @@
           <h2>Perda de Peso</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-          suscipit autem magnam, dolore sequi cum vitae nesciunt possimus non
-          temporibus dolorum animi voluptatem aliquam pariatur harum laborum,
-          incidunt voluptate assumenda? Perferendis mollitia dignissimos at
-          illo impedit dolore, ullam aliquid ut omnis id quibusdam iure odit
-          excepturi nesciunt enim perspiciatis earum.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
+          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
+          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
+          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
+          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
+          nesciunt enim perspiciatis earum.
         </p>
       </div>
       <div class="goals-box">
@@ -60,12 +60,12 @@
           <h2>Adaptação</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-          suscipit autem magnam, dolore sequi cum vitae nesciunt possimus non
-          temporibus dolorum animi voluptatem aliquam pariatur harum laborum,
-          incidunt voluptate assumenda? Perferendis mollitia dignissimos at
-          illo impedit dolore, ullam aliquid ut omnis id quibusdam iure odit
-          excepturi nesciunt enim perspiciatis earum.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
+          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
+          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
+          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
+          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
+          nesciunt enim perspiciatis earum.
         </p>
       </div>
     </div>
@@ -104,7 +104,7 @@ section {
 
 h2 {
   font-family: var(--font-montserrat);
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
 p {
