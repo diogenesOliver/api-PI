@@ -9,11 +9,10 @@
         <li>Objetivos</li>
         <li>Inscrever-se</li>
         <li>Contato</li>
-        <li></li>
       </ul>
     </nav>
     <div class="login">
-      <router-link to="/register">
+      <router-link to="/user-form">
         <button>Cadastre-se</button>
       </router-link>
       <router-link to="/login">

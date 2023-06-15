@@ -74,7 +74,19 @@
           </div>
         </div>
         <div class="submit-button">
-          <input type="submit" value="Cadastrar" />
+          <div class="buttons-box">
+            <input type="submit" value="Cadastrar" />
+          </div>
+          <p>Ou</p>
+          <div class="buttons-box">
+            <button>
+              <img
+                src="https://www.vectorlogo.zone/logos/google/google-icon.svg"
+                alt=""
+              />
+              Entre com o Google
+            </button>
+          </div>
         </div>
       </form>
     </div>
@@ -131,12 +143,11 @@ h2 {
 
 p {
   letter-spacing: 1px;
-  max-width: 500px;
 }
 
 .contact-inform {
   width: 50%;
-  min-height: 35%;
+  min-height: 45%;
   padding: 4rem 2rem 2rem;
   border-radius: 0.25rem;
   color: black;
@@ -228,13 +239,51 @@ p {
 }
 
 .submit-button {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttons-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-button button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: .5rem 1rem;
+  width: 80%;
+  background: #ebe0e0;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.submit-button button:hover {
+  background: #cfcbcb;
+}
+
+.submit-button img {
+  width: 2rem;
+}
+
+.submit-button p {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, .7);
 }
 
 input[type="submit"] {
-  padding: 0.5rem 1rem;
-  width: 50%;
+  padding: .6rem 1rem;
+  width: 80%;
   background: #151515;
   color: #fff;
   font-weight: 700;

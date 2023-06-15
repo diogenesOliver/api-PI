@@ -24,8 +24,8 @@
     </div>
     <div class="image-box reveal">
       <img
-        src="https://images.unsplash.com/photo-1574680376345-b2995af0324f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
-        alt=""
+        src="@/assets/carousel/carousel-gym-test.jpg"
+        alt="Banner"
       />
     </div>
   </section>

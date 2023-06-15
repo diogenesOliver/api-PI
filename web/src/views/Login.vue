@@ -18,7 +18,6 @@
           tenetur nobis fugit enim soluta, nemo dolor ducimus odio voluptate!
         </p>
       </div>
-
       <form name="contact" class="contact-inform form">
         <div class="form-control">
           <input
@@ -113,6 +112,15 @@ p {
   max-width: 500px;
 }
 
+.contact-inform {
+  width: 50%;
+  min-height: 47%;
+  padding: 4rem 2rem 2rem;
+  border-radius: 0.25rem;
+  color: black;
+  background: #ffffff;
+}
+
 .input-columns {
   display: flex;
   gap: 1rem;
@@ -190,19 +198,11 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-.contact-inform {
-  width: 50%;
-  min-height: 35%;
-  padding: 4rem 2rem 2rem;
-  border-radius: 0.25rem;
-  color: black;
-  background: #ffffff;
-}
-
 .submit-button {
+  position: relative;
+  top: 4.5rem;
   width: 80%;
   margin: 0 auto;
-  background: dodgerblue;
   text-align: center;
 }
 
@@ -214,27 +214,43 @@ p {
 }
 
 .submit-button button {
-  padding: 0.5rem 1rem;
-  width: 50%;
-  background: #f6f6f6;
-  color: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  padding: .5rem 1rem;
+  color: rgba(0, 0, 0, .8);
   font-weight: 700;
+  background: #ebe0e0;
+  outline: none;
   border: none;
   border-radius: 5px;
   transition: 200ms;
   cursor: pointer;
 }
 
+.submit-button button:hover {
+  background: #cfcbcb;
+}
+
 .submit-button img {
   width: 2rem;
 }
 
+.submit-button p {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, .7);
+}
+
 input[type="submit"] {
-  padding: 0.5rem 1rem;
-  width: 50%;
+  padding: .6rem 1rem;
+  width: 80%;
   background: #151515;
   color: #fff;
   font-weight: 700;
+  outline: none;
   border: none;
   border-radius: 5px;
   transition: 200ms;

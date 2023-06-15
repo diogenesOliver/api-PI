@@ -7,15 +7,15 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- <img src="@/assets/carousel/carousel-gym-1-p.jpg" alt="..."> -->
           <img src="@/assets/carousel/carousel-gym-1-md.jpg" alt="" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem Ipsum</h5>
+            <h5>Hipertrofia</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              explicabo quam debitis vitae quisquam nihil!
+              Método de treinamento exclusivo, baseado na sua progressão individual. 
             </p>
-            <button>TESTE</button>
+            <router-link to="/register">
+              <button class="slider-button">Inscreva-se</button>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -24,21 +24,25 @@
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem Ipsum</h5>
+            <h5>Adaptação</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              explicabo quam debitis vitae quisquam nihil!
+              Prepare seu corpo para novos desafios e ultrapasse qualquer lesão.
             </p>
+            <router-link to="/register">
+              <button class="slider-button">Inscreva-se</button>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
           <img src="@/assets/carousel/carousel-food-3-p.jpg" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem Ipsum</h5>
+            <h5>Alimentação</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              explicabo quam debitis vitae quisquam nihil!
+              Tenha uma alimentação mais saudável e rica em nutrientes para alcançar seus objetivos.
             </p>
+            <router-link to="/register">
+              <button class="slider-button">Inscreva-se</button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -92,5 +96,32 @@ export default {
 .carousel img {
   height: 100% !important;
   width: 100%;
+}
+
+h5 {
+  font-size: clamp(1rem, 2rem, 2.5rem);
+  font-weight: 700;
+}
+
+p {
+  font-size: clamp(1rem, 1.1rem, 1.2rem);
+  font-weight: 500;
+}
+
+.slider-button {
+  padding: 1rem;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  background: #151515;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.slider-button:hover {
+  background: #a5a4a4;
+  color: black;
 }
 </style>
