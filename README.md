@@ -76,3 +76,32 @@ model Alimentacao {
 - `GET /recipes` Retorna todas as receitas
 - `GET /exercises` Retorna tods os exercício
 - `POST /login` Rota para cadastro de usuário
+<br>
+
+## Banco de dados
+
+Para armazenar os dados do projeto, optamos por utilizar o banco de dados `postgreSQL`. Geramos o hospedamos nosso banco de dados em um container Docker. Abaixo temos o nosso `docker-compose.yaml`, onde definimos as configurações do nosso container.
+
+<br>
+
+```yaml
+version: "3"
+
+services:
+  db-postgres-evento:
+    image: postgres:alpine
+    ports:
+      - "5438:5432"
+    container_name: "db-postgres-evento"
+    restart: always
+    volumes:
+      - ./database-postgres-apiPI:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+
+volumes:
+  db-postgres-evento:
+```
+
+- Depois de definidas todas as configurações do nosso container postgres, rodamos o seguinte comando `docker compose up -d`.
