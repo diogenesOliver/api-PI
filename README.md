@@ -95,10 +95,11 @@ model Alimentacao {
 
 ## Rotas
 
-- `GET /users` Retorna todos os usuários inseridos no banco de dados
-- `GET /recipes` Retorna todas as receitas
-- `GET /exercises` Retorna tods os exercício
-- `POST /login` Rota para cadastro de usuário
+- `GET /users`      Retorna todos os usuários inseridos no banco de dados
+- `GET /recipes`    Retorna todas as receitas
+- `GET /exercises`  Retorna tods os exercício
+- `POST /register`  Rota para cadastro de usuário
+- `POST /login`     Rota para o login do usuário
 <br>
 
 </div>
