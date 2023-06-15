@@ -11,8 +11,8 @@ export class UserLoginController {
         const inputData: UserData = req.body
         const findUserEmail = await this.userLoginService.findUser(inputData.email)
 
-        if (findUserEmail == inputData.email)
-            res.status(404).send('User already exist..')
+        if (findUserEmail == null)
+            res.status(404).send('User not exist..')
 
         res.status(200).send('Welcome to system')
         return {
