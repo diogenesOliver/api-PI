@@ -104,4 +104,8 @@ volumes:
   db-postgres-evento:
 ```
 
-- Depois de definidas todas as configurações do nosso container postgres, rodamos o seguinte comando `docker compose up -d`.
+- Depois de definidas todas as configurações do nosso container postgres, rodamos o seguinte comando.
+
+````
+docker compose up -d
+````
