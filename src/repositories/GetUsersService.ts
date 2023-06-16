@@ -4,7 +4,12 @@ import { IGetFunctionGeneric, PrismaClietInstance } from './GenericInterface/Gen
 export class GetUsersService implements IGetFunctionGeneric<Array<UserData>>{
     
     async get(): Promise<UserData[]> {
-        const users: UserData[] = await PrismaClietInstance.userData.findMany()
+        const users: UserData[] = await PrismaClietInstance.userData.findMany({
+            include: {
+                Alimentacao: true,
+                Exercicios: true
+            }
+        })
         return users
     }
 }
