@@ -147,6 +147,16 @@ docker compose up -d
 
 Para inicializar o nosso servidor executamos os seguinte comando `npm run dev`, após esse comando o servidor é inicializado no `http://localhost:3000/`.
 
+```typescript
+import { app } from "./main";
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, async () => {
+    console.log(`Server running on port: ${PORT}`)
+})
+```
+<br>
+
 - WIP: <strong>Estamos trabalhando para que o ambiente de inicialização do nosso servidor esteja por completo no Doker. Gerando uma imagem no Dockerfile e iniciar um novo container do nosso servidor a partir dessa imagem através do comando</strong>
 
 ```
