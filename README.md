@@ -138,3 +138,17 @@ volumes:
 docker compose up -d
 ````
 </div>
+
+<br>
+
+<div id="execute">
+
+## Executando o projeto
+
+Para inicializar o nosso servidor executamos os seguinte comando `npm run dev`, após esse comando o servidor é inicializado no `http://localhost:3000/`.
+
+- WIP: <strong>Estamos trabalhando para que o ambiente de inicialização do nosso servidor esteja por completo no Doker. Gerando uma imagem no Dockerfile e iniciar um novo container do nosso servidor a partir dessa imagem através do comando</strong>
+
+``docker build -t <IMAGE_NAME> .``
+
+</div>
