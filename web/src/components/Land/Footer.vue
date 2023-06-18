@@ -40,7 +40,6 @@ footer {
 h4,
 h3,
 p {
-  font-family: var(--font-poppins);
   color: var(--primary-dark-low);
 }
 

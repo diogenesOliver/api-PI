@@ -110,7 +110,6 @@ h2 {
 p {
   max-width: 650px;
   margin-top: 1rem;
-  font-family: var(--font-poppins);
   text-align: justify;
 }
 

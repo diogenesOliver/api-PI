@@ -22,16 +22,10 @@ export default {
 
 :root {
   --font-poppins: "Poppins", sans-serif;
-  --font-lato: "Lato", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
-  --main-blue: hsl(217, 64%, 31%);
-  --main-orange: hsl(45, 100%, 50%);
   --main-dark: hsl(212, 33%, 9%);
   --primary-dark-low: hsl(217, 19%, 14%);
   --main-dark-low: hsla(0, 0%, 0%, 0.8);
   --main-white: hsl(180, 22%, 90%);
-  --primary-cream: hsl(52, 19%, 85%);
 }
 
 html {
@@ -41,6 +35,7 @@ html {
 body {
   background: hsl(210, 17%, 9%);
   color: #fff;
+  font-family: var(--font-poppins);
 }
 
 * {

@@ -12,7 +12,7 @@
     </div>
     <div class="register-box">
       <div class="title">
-        <h2>Contece-se ao seu perfil</h2>
+        <h2>Conecte-se ao seu perfil</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic incidunt
           tenetur nobis fugit enim soluta, nemo dolor ducimus odio voluptate!
@@ -21,13 +21,12 @@
       <form name="contact" class="contact-inform form">
         <div class="form-control">
           <input
-            type="text"
-            name="name"
+            type="email"
             class="form-input"
             placeholder="none"
             required
           />
-          <label for="name" class="form-label">Nome</label>
+          <label for="name" class="form-label">E-mail</label>
         </div>
         <div class="form-control">
           <input

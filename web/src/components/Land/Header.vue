@@ -12,7 +12,7 @@
       </ul>
     </nav>
     <div class="login">
-      <router-link to="/user-form">
+      <router-link to="/welcome">
         <button>Cadastre-se</button>
       </router-link>
       <router-link to="/login">

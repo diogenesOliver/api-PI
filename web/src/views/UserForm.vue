@@ -1,9 +1,22 @@
 <template>
-  <main>
-    <UserHeader />
-    <section>
+  <section>
+    <header>
+      <div class="logo">
+        <img src="@/assets/imgs/logo.png" alt="" />
+      </div>
+      <div class="login">
+        <router-link to="/">
+          <img
+            class="close-icon"
+            src="@/assets/icons/close_white_48dp.svg"
+            alt=""
+          />
+        </router-link>
+      </div>
+    </header>
+    <div class="container">
       <div class="title">
-        <h2>Bem-vindo, Fulano!</h2>
+        <h3>Bem-vindo, Fulano!</h3>
         <p>
           Por gentileza, complete seu cadastro com alguns dados pessoais para
           conhecermos um pouco mais sobre você.
@@ -15,8 +28,7 @@
             <input
               v-model="user.height"
               v-mask="'#.##m'"
-              type="email"
-              name="email"
+              type="text"
               class="form-input"
               placeholder="none"
               required
@@ -27,8 +39,7 @@
             <input
               v-model="user.weight"
               v-mask="'##.#kg'"
-              type="email"
-              name="email"
+              type="text"
               class="form-input"
               placeholder="none"
               required
@@ -41,8 +52,7 @@
             <input
               v-model="user.age"
               v-mask="'##'"
-              type="email"
-              name="email"
+              type="text"
               class="form-input"
               placeholder="none"
               required
@@ -53,54 +63,74 @@
             <input
               v-model="user.idk"
               v-mask="'##.#kg'"
-              type="email"
-              name="email"
+              type="text"
               class="form-input"
               placeholder="none"
               required
             />
-            <label for="email" class="form-label">Peso</label>
+            <label for="email" class="form-label">A decidir</label>
           </div>
         </div>
+        <div class="title">
+          <h3>Qual o seu grupo alimentar?</h3>
+        </div>
         <div class="food-group">
-          <div class="title">
-            <h3>Qual o seu grupo alimentar?</h3>
-            <div class="input-box">
-              <input
-                type="radio"
-                name="food-radio"
-                id="carnivore"
-                v-model="isCarnivore"
-              />
-              <label for="carnivore">Carnivoro</label>
-            </div>
-            <div class="input-box">
-              <input
-                type="radio"
-                name="food-radio"
-                id="vegetarian"
-                v-model="isVeg"
-              />
-              <label for="vegetarian">Vegetariano</label>
-            </div>
-            <div class="input-box">
-              <input
-                type="radio"
-                name="food-radio"
-                id="vegan"
-                v-model="isVegan"
-              />
-              <label for="vegan">Vegano</label>
-            </div>
+          <div class="input-box">
+            <input
+              type="radio"
+              name="food-radio"
+              id="carnivore"
+              v-model="isCarnivore"
+            />
+            <label for="carnivore">Carnivoro</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="radio"
+              name="food-radio"
+              id="vegetarian"
+              v-model="isVeg"
+            />
+            <label for="vegetarian">Vegetariano</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="radio"
+              name="food-radio"
+              id="vegan"
+              v-model="isVegan"
+            />
+            <label for="vegan">Vegano</label>
+          </div>
+        </div>
+        <div class="title">
+          <h3>Você possui alguma lesão que impossibilita de treinar?</h3>
+        </div>
+        <div class="lesion-box">
+          <div class="test">
+            <input type="checkbox" id="lesionCChk" />
+            <label for="lesionCChk">Lesão no peitoral</label>
+          </div>
+          <div class="test">
+            <input type="checkbox" id="lesionAChk" />
+            <label for="lesionAChk">Lesão no braço</label>
+          </div>
+          <div class="test">
+            <input type="checkbox" id="lesionRChk" />
+            <label for="lesionRChk">Lesão no quadril</label>
+          </div>
+          <div class="test">
+            <input type="checkbox" id="lesionLChk" />
+            <label for="lesionLChk">Lesão na perna</label>
           </div>
         </div>
       </form>
-    </section>
-  </main>
+      <button class="register-button">Continuar</button>
+    </div>
+  </section>
 </template>
 
 <script>
-import UserHeader from "@/components/UserHeader.vue";
 export default {
   name: "UserForm",
 
@@ -112,37 +142,51 @@ export default {
       },
     };
   },
-
-  components: {
-    UserHeader,
-  },
 };
 </script>
 
 <style scoped>
-main {
-  height: 85vh;
-}
-
 section {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   background: #fff;
 }
 
-.title {
-  color: black;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #13171b;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  width: 13rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.title h3 {
+  font-size: 1.45rem;
+  color: rgba(0, 0, 0, 0.9);
   background: #ffffff;
+  margin: 1.5rem 0;
+}
+
+.title p {
+  color: black;
 }
 
 .contact-inform {
-  width: 45%;
+  width: 88%;
   min-height: 50%;
-  padding: 4rem 2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.25rem;
   color: black;
 }
@@ -224,13 +268,45 @@ section {
   transition: all 0.2s ease-in-out;
 }
 
-.input-box {
+/*.input-box {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* .input-box input {
+.input-box input {
+  margin-bottom: .45rem;
+}*/
+
+.food-group {
   display: flex;
-} */
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lesion-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-group input,
+.lesion-box input {
+  margin: 0 0.5rem;
+}
+
+.register-button {
+  position: relative;
+  top: 5rem;
+  width: 10%;
+  padding: 0.5rem 1rem;
+  color: #f6f6f6;
+  font-weight: 700;
+  background: #151515;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 200ms;
+  cursor: pointer;
+}
 </style>
