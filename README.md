@@ -7,6 +7,7 @@
 - [Tabelas](#tabelas)
 - [Rotas](#rotas)
 - [Database](#database)
+- [Configurações do projeto](#execute)
 
 <div id="api">
 
