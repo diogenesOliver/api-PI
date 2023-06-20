@@ -146,6 +146,8 @@ docker compose up -d
 
 ## Executando o projeto
 
+Para que possamos inicializar o nosso servidor, primeiramente devemos instalar todas as dependências do nosso projeto, para isso devemos executar o seguinte comando nosso terminal `npm install --save-dev`. Isso na pasta raiz, onde está todas as dependência do nosso Backend, para instalar as dependeências do nosso Frontend, navegue até a pasta `web` com `cd web` em seguida execute `npm install --save-dev`.
+
 Para inicializar o nosso servidor executamos os seguinte comando `npm run dev`, após esse comando o servidor é inicializado no `http://localhost:3000/`.
 
 ```typescript
