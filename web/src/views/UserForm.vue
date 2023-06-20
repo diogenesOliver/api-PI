@@ -268,16 +268,6 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-/*.input-box {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.input-box input {
-  margin-bottom: .45rem;
-}*/
-
 .food-group {
   display: flex;
   align-items: center;
@@ -298,9 +288,10 @@ header {
 .register-button {
   position: relative;
   top: 5rem;
-  width: 10%;
-  padding: 0.5rem 1rem;
+  width: 25%;
+  padding: 1rem;
   color: #f6f6f6;
+  font-size: 1.1rem;
   font-weight: 700;
   background: #151515;
   outline: none;
@@ -308,5 +299,9 @@ header {
   border-radius: 5px;
   transition: 200ms;
   cursor: pointer;
+}
+
+.register-button:hover {
+  background: #2c2a2a;
 }
 </style>
