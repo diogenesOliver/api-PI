@@ -91,4 +91,10 @@ button {
 button:hover {
   background: #3b4147;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+  }
+}
 </style>

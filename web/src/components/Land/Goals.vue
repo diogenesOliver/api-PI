@@ -93,7 +93,7 @@ section {
   flex-direction: column;
   width: 30%;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .goal-title {
@@ -115,5 +115,21 @@ p {
 
 img {
   width: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .goal-box {
+    padding: 1.5rem 0;
+    width: 80%;
+  }
+
+  p {
+    max-width: 100% !important;
+  }
 }
 </style>

@@ -11,6 +11,11 @@
         <li>Contato</li>
       </ul>
     </nav>
+    <div class="bars-menu">
+      <button>
+        <img src="@/assets/media/icons8-menu-30.png" alt="" />
+      </button>
+    </div>
     <div class="login">
       <router-link to="/welcome">
         <button>Cadastre-se</button>
@@ -59,6 +64,14 @@ li:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.bars-menu {
+  display: none;
+}
+
+.bars-menu img {
+  width: 1.5rem;
+}
+
 .login {
   display: flex;
   gap: 2rem;
@@ -81,7 +94,30 @@ button:hover {
   background: #33383d;
 }
 
-img {
+.logo img {
   width: 13rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  ul,
+  .login {
+    display: none;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  .bars-menu {
+    display: block;
+  }
+
+  .bars-menu img {
+    width: 2rem;
+  }
 }
 </style>

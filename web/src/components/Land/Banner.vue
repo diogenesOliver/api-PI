@@ -7,11 +7,18 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/carousel/carousel-gym-1-md.jpg" alt="" />
-          <div class="carousel-caption d-none d-md-block">
+          <picture>
+            <source
+              srcset="@/assets/media/carousel-gym-1-small.jpg"
+              media="(max-width: 600px)"
+            />
+            <img src="@/assets/carousel/carousel-gym-1.jpg" alt="" />
+          </picture>
+          <div class="carousel-caption d-md-block">
             <h5>Hipertrofia</h5>
             <p>
-              Método de treinamento exclusivo, baseado na sua progressão individual. 
+              Método de treinamento exclusivo, baseado na sua progressão
+              individual.
             </p>
             <router-link to="/register">
               <button class="slider-button">Inscreva-se</button>
@@ -23,7 +30,7 @@
             src="@/assets/carousel/carousel-gym-test3 - Copia.jpg"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h5>Adaptação</h5>
             <p>
               Prepare seu corpo para novos desafios e ultrapasse qualquer lesão.
@@ -35,10 +42,11 @@
         </div>
         <div class="carousel-item">
           <img src="@/assets/carousel/carousel-food-3-p.jpg" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h5>Alimentação</h5>
             <p>
-              Tenha uma alimentação mais saudável e rica em nutrientes para alcançar seus objetivos.
+              Tenha uma alimentação mais saudável e rica em nutrientes para
+              alcançar seus objetivos.
             </p>
             <router-link to="/register">
               <button class="slider-button">Inscreva-se</button>
@@ -99,29 +107,40 @@ export default {
 }
 
 h5 {
-  font-size: clamp(1rem, 2rem, 2.5rem);
+  font-size: clamp(1rem, 3.5vw, 2.5rem);
   font-weight: 700;
 }
 
 p {
-  font-size: clamp(1rem, 1.1rem, 1.2rem);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   font-weight: 500;
 }
 
 .slider-button {
   padding: 1rem;
   width: 20%;
-  border: none;
+  border: 1px solid #555555;
   border-radius: 5px;
-  background: #151515;
+  background: #1c1c1c;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .slider-button:hover {
-  background: #a5a4a4;
-  color: black;
+  background: #272424;
+  border: 1px solid transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 45dvh !important;
+  }
+
+  .slider-button {
+    padding: 0.5rem;
+    width: 40%;
+  }
 }
 </style>

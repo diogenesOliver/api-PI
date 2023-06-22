@@ -22,11 +22,8 @@
         quis voluptatem.
       </p>
     </div>
-    <div class="image-box reveal">
-      <img
-        src="@/assets/carousel/carousel-gym-test.jpg"
-        alt="Banner"
-      />
+    <div class="image-box">
+      <img src="@/assets/carousel/carousel-gym-test.jpg" alt="Banner" />
     </div>
   </section>
 </template>
@@ -40,6 +37,8 @@ export default {
 <style scoped>
 section {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5rem auto;
   width: 80%;
   height: 70vh;
@@ -56,7 +55,7 @@ section {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 20vw, 3rem);
   color: var(--main-dark);
 }
 
@@ -81,5 +80,29 @@ img {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
   height: 80%;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    height: 80dvh !important;
+    background: #fff;
+    margin: 3rem auto;
+  }
+
+  .about-box {
+    padding: 2rem;
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .image-box {
+    display: none;
+  }
+
+  p {
+    max-width: 100%;
+  }
 }
 </style>

@@ -104,4 +104,10 @@ img {
   border-radius: 5px;
   margin: 2rem 0;
 }
+
+@media screen and (max-width: 600px) {
+  .services {
+    display: block;
+  }
+}
 </style>
