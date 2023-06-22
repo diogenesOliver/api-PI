@@ -3,7 +3,13 @@ import { ISaveFunctionGeneric, PrismaClietInstance } from './GenericInterface/Ge
 
 export class CreateUserService implements ISaveFunctionGeneric<UserData>{
     async save(data: UserData): Promise<UserData> {
-        await PrismaClietInstance.userData.create({ data })
+        await PrismaClietInstance.userData.create({
+            data: data,
+            include: {
+                Exercicios: true,
+                Alimentacao: true
+            }
+        })
         return data
     }
 }

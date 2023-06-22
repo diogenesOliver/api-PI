@@ -9,3 +9,7 @@ export interface ISaveFunctionGeneric<T> {
 export interface IGetFunctionGeneric<T> {
     get(): Promise<T>
 }
+
+export interface IUserLoginFunction<T>{
+    findUser(userEmail: T): Promise<T>
+}
