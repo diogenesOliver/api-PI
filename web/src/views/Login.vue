@@ -14,18 +14,13 @@
       <div class="title">
         <h2>Conecte-se ao seu perfil</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic incidunt
-          tenetur nobis fugit enim soluta, nemo dolor ducimus odio voluptate!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+          recusandae.
         </p>
       </div>
       <form name="contact" class="contact-inform form">
         <div class="form-control">
-          <input
-            type="email"
-            class="form-input"
-            placeholder="none"
-            required
-          />
+          <input type="email" class="form-input" placeholder="none" required />
           <label for="name" class="form-label">E-mail</label>
         </div>
         <div class="form-control">
@@ -69,7 +64,7 @@ section {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .close-icon {
@@ -218,8 +213,8 @@ p {
   align-items: center;
   gap: 1rem;
   width: 80%;
-  padding: .5rem 1rem;
-  color: rgba(0, 0, 0, .8);
+  padding: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
   background: #ebe0e0;
   outline: none;
@@ -240,11 +235,11 @@ p {
 .submit-button p {
   font-weight: 500;
   margin-top: 1rem;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 input[type="submit"] {
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   width: 80%;
   background: #151515;
   color: #fff;
@@ -258,5 +253,204 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #2c2a2a;
+}
+
+@media screen and (max-width: 600px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .register-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 90%;
+    min-height: 50%;
+  }
+
+  .form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 2.5rem;
+    width: 100%;
+  }
+
+  .buttons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .register-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.65rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 80%;
+    min-height: 60%;
+  }
+
+  .form-control {
+    width: 80%;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 3.5rem;
+    width: 80%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1366px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  .img-box {
+    width: 40%;
+  }
+
+  .register-box {
+    width: 60%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.65rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 80%;
+    min-height: 60%;
+  }
+
+  .form-control {
+    width: 80%;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 3.5rem;
+    width: 80%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 </style>

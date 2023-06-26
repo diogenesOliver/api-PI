@@ -29,10 +29,6 @@
               Veritatis sint optio voluptatum dolorum expedita temporibus.
             </p>
           </div>
-          <div class="box">
-            <h2>O que você deseja ver?</h2>
-            <p>Selecione algum de nossos serviços.</p>
-          </div>
         </div>
         <div class="avatar-card">
           <img
@@ -43,6 +39,10 @@
           <p>Idade: 24</p>
           <p>Peso: 68kg</p>
         </div>
+      </div>
+      <div class="box">
+        <h2>O que você deseja ver?</h2>
+        <p>Selecione algum de nossos serviços.</p>
       </div>
       <div class="cards">
         <div class="workout">
@@ -78,19 +78,6 @@ export default {
 </script>
 
 <style scoped>
-.d-flex-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.avatar-card {
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
-}
-
 section {
   height: 100dvh;
   background: #fff;
@@ -103,6 +90,10 @@ header {
   justify-content: space-between;
   padding: 2rem;
   background: #13171b;
+}
+
+header img {
+  width: 8rem;
 }
 
 ul {
@@ -128,24 +119,42 @@ a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
-img {
-  width: 13rem;
-}
-
 .container {
   min-width: 80%;
   padding: 1rem 0;
-  margin: 2rem auto;
 }
 
-.welcome {
-  margin-bottom: 2rem;
+.d-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-card {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  background: #13171b;
+  color: #fff;
+}
+
+.avatar-card img {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.avatar-card h3 {
+  text-align: center;
 }
 
 .cards {
   display: flex;
   gap: 2rem;
-  margin: 5rem 0;
 }
 
 .workout,
@@ -171,6 +180,7 @@ img {
 .food:hover,
 .evolution:hover {
   transform: scale(1.0265);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .workout p,

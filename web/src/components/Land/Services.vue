@@ -14,7 +14,9 @@
           cupiditate, assumenda consequuntur. Nobis quis facilis dignissimos est
           numquam, distinctio alias.
         </p>
-        <a href="#">Inscreva-se</a>
+        <button>
+          <a href="#">Inscreva-se</a>
+        </button>
       </div>
       <div class="services-box">
         <img src="@/assets/imgs/lose-w.jpg" alt="" />
@@ -25,7 +27,9 @@
           voluptatum harum dolor maxime incidunt architecto quis cupiditate
           fugiat provident iusto nisi iste!
         </p>
-        <a href="#">Inscreva-se</a>
+        <button>
+          <a href="#">Inscreva-se</a>
+        </button>
       </div>
       <div class="services-box">
         <img
@@ -39,7 +43,9 @@
           debitis sed porro qui ea molestias quia temporibus autem tempora dolor
           voluptates! Minus?
         </p>
-        <a href="#">Inscreva-se</a>
+        <button>
+          <a href="#">Inscreva-se</a>
+        </button>
       </div>
     </div>
   </section>
@@ -82,18 +88,23 @@ p {
   margin: 2rem 0;
 }
 
-a {
+button {
   padding: 1rem;
   background: #fff;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 700;
-  text-decoration: none;
   transition: 400ms;
   border: none;
   border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
 }
 
-a:hover {
+a {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button:hover {
   background: #9c9a9a;
 }
 
@@ -108,6 +119,35 @@ img {
 @media screen and (max-width: 600px) {
   .services {
     display: block;
+  }
+
+  a {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
+  .services {
+    display: block;
+  }
+
+  a {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1366px) {
+  .services {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .services-box {
+    padding: 0;
+    min-height: 100%;
   }
 }
 </style>

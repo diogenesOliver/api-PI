@@ -11,18 +11,22 @@
         <li>Contato</li>
       </ul>
     </nav>
+    <div class="login">
+      <router-link to="/welcome" class="login-buttons">
+        <ul>
+          <li>Cadastre-se</li>
+        </ul>
+      </router-link>
+      <router-link to="/login" class="login-buttons">
+        <ul>
+          <li>Login</li>
+        </ul>
+      </router-link>
+    </div>
     <div class="bars-menu">
       <button>
         <img src="@/assets/media/icons8-menu-30.png" alt="" />
       </button>
-    </div>
-    <div class="login">
-      <router-link to="/welcome">
-        <button>Cadastre-se</button>
-      </router-link>
-      <router-link to="/login">
-        <button>Login</button>
-      </router-link>
     </div>
   </header>
 </template>
@@ -42,8 +46,13 @@ header {
   background: #13171b;
 }
 
+.login-buttons {
+  text-decoration: none;
+}
+
 ul {
   display: flex;
+  text-decoration: none;
   gap: 2rem;
 }
 
@@ -56,6 +65,7 @@ li {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
   transition: 400ms;
 }
 
@@ -118,6 +128,83 @@ button:hover {
 
   .bars-menu img {
     width: 2rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  header {
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  .login {
+    display: flex;
+    gap: 0;
+  }
+
+  .bars-menu {
+    display: block;
+  }
+
+  .bars-menu img {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 930px) {
+  header {
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 0rem;
+  }
+
+  li {
+    padding: 0.6rem;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .bars-menu {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1024px) {
+  header {
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 0rem;
+  }
+
+  .login {
+    gap: 0;
   }
 }
 </style>

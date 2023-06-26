@@ -83,7 +83,6 @@ section {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 2rem auto;
   background: #fff;
   color: black;
 }
@@ -118,6 +117,22 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .goal-box {
+    padding: 1.5rem 0;
+    width: 80%;
+  }
+
+  p {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
   section {
     display: block;
     margin: 0 auto;

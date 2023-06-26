@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 .banner {
-  height: 70vh !important;
+  height: 70dvh !important;
 }
 
 .carousel-item img {
@@ -107,12 +107,12 @@ export default {
 }
 
 h5 {
-  font-size: clamp(1rem, 3.5vw, 2.5rem);
+  font-size: clamp(1rem, 8vw, 2.5rem);
   font-weight: 700;
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
   font-weight: 500;
 }
 
@@ -140,7 +140,21 @@ p {
 
   .slider-button {
     padding: 0.5rem;
-    width: 40%;
+    width: 60%;
   }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .banner {
+    height: 70dvh !important;
+  }
+
+  .slider-button {
+    padding: 1rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1024px) {
 }
 </style>
