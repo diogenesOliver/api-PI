@@ -14,6 +14,7 @@
 - [Rotas](#rotas)
 - [Database](#database)
 - [Configurações do projeto](#execute)
+- [Arquitetura do projeto](#wip)
 
 <div id="api">
 
@@ -171,5 +172,33 @@ app.listen(PORT, async () => {
 ```
 docker build -t <IMAGE_NAME> .
 ```
+
+</div>
+
+<br>
+
+<div id='clean-arcitecture'>
+
+## Arquitetura do Backend
+
+Para uma melhor escalabilidade e manutenção de código a arquitetura utilizada no backend desse projeto foi a SOLID tendo como ênfase maior no S(Single Responsability). A lingugaem TypeScript foi escolhida por toranar essa arquitetura mais simples de ser utilizada, por disponibilizar funcionalidades a mais que o JavaScript não tem.
+
+</div>
+
+<br>
+
+<div id="testes">
+
+## Testes
+
+Foi implementado testes de integração para todas as rotas do projeto `__testes__`, ao rodar o seguinte.
+
+```
+npm run test
+```
+
+Executamos os testes. Para configurar os testes de integração utilizamos a lib `jest`.
+
+WIP: **Para atualizações futuras os testes serão feitos através do ViteJS**
 
 </div>
