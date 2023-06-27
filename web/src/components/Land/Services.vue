@@ -4,7 +4,7 @@
     <div class="services">
       <div class="services-box">
         <img
-          src="https://images.unsplash.com/photo-1532384661798-58b53a4fbe37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          src="@/assets/imgs/5.jpg"
           alt=""
         />
         <h3>Hipertrofia</h3>
@@ -33,7 +33,7 @@
       </div>
       <div class="services-box">
         <img
-          src="@/assets/imgs/victor-freitas-JbI04nYfaJk-unsplash.jpg"
+          src="@/assets/imgs/1.jpg"
           alt=""
         />
         <h3>Adaptação</h3>

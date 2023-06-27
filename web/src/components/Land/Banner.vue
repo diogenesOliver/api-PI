@@ -12,7 +12,7 @@
               srcset="@/assets/media/carousel-gym-1-small.jpg"
               media="(max-width: 600px)"
             />
-            <img src="@/assets/carousel/carousel-gym-1.jpg" alt="" />
+            <img src="@/assets/carousel/carousel-gym-1-md.jpg" alt="" />
           </picture>
           <div class="carousel-caption d-md-block">
             <h5>Hipertrofia</h5>
