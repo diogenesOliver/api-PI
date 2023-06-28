@@ -27,3 +27,4 @@ pnpm-debug.log*
 database-postgres-apiPi
 
 prisma/migrations
+coverage
