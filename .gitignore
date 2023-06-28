@@ -11,3 +11,4 @@ prisma/migrations
 
 database-postgres-apiPI
 aws-terraform-apiPI
+coverage
