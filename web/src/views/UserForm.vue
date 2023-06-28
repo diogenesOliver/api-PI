@@ -109,23 +109,25 @@
         <div class="lesion-box">
           <div class="test">
             <input type="checkbox" id="lesionCChk" />
-            <label for="lesionCChk">Lesão no peitoral</label>
+            <label for="lesionCChk">Peitoral</label>
           </div>
           <div class="test">
             <input type="checkbox" id="lesionAChk" />
-            <label for="lesionAChk">Lesão no braço</label>
+            <label for="lesionAChk">Braço</label>
           </div>
           <div class="test">
             <input type="checkbox" id="lesionRChk" />
-            <label for="lesionRChk">Lesão no quadril</label>
+            <label for="lesionRChk">Quadril</label>
           </div>
           <div class="test">
             <input type="checkbox" id="lesionLChk" />
-            <label for="lesionLChk">Lesão na perna</label>
+            <label for="lesionLChk">Perna</label>
           </div>
         </div>
       </form>
-      <button class="register-button">Continuar</button>
+      <div class="button-box">
+        <button class="register-button">Continuar</button>
+      </div>
     </div>
   </section>
 </template>
@@ -170,12 +172,13 @@ header {
   align-items: center;
   justify-content: center;
   height: 80%;
+  margin-top: 1rem;
+  background: #fff;
 }
 
 .title h3 {
   font-size: 1.45rem;
   color: rgba(0, 0, 0, 0.9);
-  background: #ffffff;
   margin: 1.5rem 0;
 }
 
@@ -285,10 +288,12 @@ header {
   margin: 0 0.5rem;
 }
 
-.register-button {
-  position: relative;
-  top: 5rem;
+.button-box {
   width: 25%;
+}
+
+.register-button {
+  width: 100%;
   padding: 1rem;
   color: #f6f6f6;
   font-size: 1.1rem;
@@ -303,5 +308,167 @@ header {
 
 .register-button:hover {
   background: #2c2a2a;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    min-height: 100dvh;
+    background: #fff;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .container {
+    display: block;
+    background: #fff;
+  }
+
+  .title h3 {
+    text-align: center;
+    font-size: 1.45rem;
+    margin: 1.5rem 0;
+  }
+
+  .title p {
+    text-align: justify;
+    color: black;
+  }
+
+  .contact-inform {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lesion-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.55rem;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .register-button {
+    margin-top: 0.75rem;
+    width: 50%;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .container {
+    display: block;
+    background: #fff;
+  }
+
+  .title h3 {
+    font-size: 1.45rem;
+    margin: 1.5rem 0;
+  }
+
+  .title p {
+    text-align: justify;
+    color: black;
+  }
+
+  .contact-inform {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lesion-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .register-button {
+    margin-top: 3.5rem;
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1199px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .container {
+    margin-top: 1rem;
+  }
+
+  .title h3 {
+    font-size: 1.65rem;
+    margin: 1.5rem 0;
+  }
+
+  .title p {
+    text-align: justify;
+    color: black;
+  }
+
+  .contact-inform {
+    width: 100%;
+    padding: 0;
+  }
+
+  .lesion-box {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .register-button {
+    margin-top: 3.5rem;
+    width: 35%;
+    padding: 1rem;
+  }
 }
 </style>

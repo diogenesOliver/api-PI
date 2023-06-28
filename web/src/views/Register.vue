@@ -14,8 +14,8 @@
       <div class="title">
         <h2>Cadastre-se</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic incidunt
-          tenetur nobis fugit enim soluta, nemo dolor ducimus odio voluptate!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
+          itaque.
         </p>
       </div>
       <form name="contact" class="contact-inform form">
@@ -256,10 +256,10 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   width: 80%;
   background: #ebe0e0;
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
   border: none;
   border-radius: 5px;
@@ -278,11 +278,11 @@ p {
 .submit-button p {
   font-weight: 500;
   margin-top: 1rem;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 input[type="submit"] {
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   width: 80%;
   background: #151515;
   color: #fff;
@@ -295,5 +295,230 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #2c2a2a;
+}
+
+@media screen and (max-width: 600px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .register-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 90%;
+    min-height: 70%;
+  }
+
+  .form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 2.5rem;
+    width: 100%;
+  }
+
+  .buttons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .input-columns {
+    display: block;
+    gap: 1rem;
+    margin: 0.8rem 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 930px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .register-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 90%;
+    min-height: 60%;
+  }
+
+  .form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 2.5rem;
+    width: 45%;
+  }
+
+  .buttons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1366px) {
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .img-box {
+    width: 40%;
+  }
+
+  .register-box {
+    width: 60%;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .contact-inform {
+    width: 90%;
+    min-height: 60%;
+  }
+
+  .form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    position: relative;
+    top: 2.5rem;
+    width: 55%;
+  }
+
+  .buttons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-button button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .submit-button img {
+    width: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
 }
 </style>

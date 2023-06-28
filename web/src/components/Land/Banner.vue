@@ -85,6 +85,7 @@ export default {
 <style scoped>
 .banner {
   height: 70dvh !important;
+  z-index: -1;
 }
 
 .carousel-item img {

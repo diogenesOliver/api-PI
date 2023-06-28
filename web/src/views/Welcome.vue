@@ -4,20 +4,27 @@
       <div class="logo">
         <img src="@/assets/imgs/logo.png" alt="" />
       </div>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Treinamentos</a>
-        </li>
-        <li>
-          <a href="">Dietas</a>
-        </li>
-        <li>
-          <a href="">Calculo IMC</a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Treinamentos</a>
+          </li>
+          <li>
+            <a href="">Dietas</a>
+          </li>
+          <li>
+            <a href="">Calculo IMC</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="bars-menu">
+        <button>
+          <img src="@/assets/media/icons8-menu-30.png" alt="" />
+        </button>
+      </div>
     </header>
     <div class="container">
       <div class="d-flex-box">
@@ -92,7 +99,7 @@ header {
   background: #13171b;
 }
 
-header img {
+.logo img {
   width: 8rem;
 }
 
@@ -117,6 +124,10 @@ a {
 a:hover {
   background: #c9d6d4;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.bars-menu {
+  display: none;
 }
 
 .container {
@@ -221,5 +232,88 @@ a:hover {
     url("https://images.unsplash.com/photo-1583500179017-12d75b04e351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
   background-size: cover;
   background-position: center;
+}
+
+button {
+  font-family: var(--font-montserrat);
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+button:hover {
+  background: #33383d;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    height: 100dvh;
+    background: #fff;
+    color: #000000;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header img {
+    width: 8rem;
+  }
+
+  .d-flex-box {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .box p {
+    text-align: center;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .workout,
+  .food,
+  .evolution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    width: 100%;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+    text-align: justify;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .workout p,
+  .food p,
+  .evolution p {
+    max-width: 80%;
+    font-weight: 500;
+  }
 }
 </style>
