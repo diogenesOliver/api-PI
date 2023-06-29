@@ -146,21 +146,22 @@ img {
 
 @media screen and (min-width: 931px) and (max-width: 1366px) {
   section {
-    height: 70dvh !important;
+    height: 65dvh !important;
     margin: 2rem auto;
     width: 100%;
   }
 
   .about-box {
     width: 45%;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
   }
 
   .image-box {
     top: 2rem;
     position: relative;
-    width: 35%;
-    right: 2rem;
+    width: 40%;
+    height: 80%;
+    right: 0.65rem;
   }
 
   img {

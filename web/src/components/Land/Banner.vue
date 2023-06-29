@@ -147,7 +147,7 @@ p {
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .banner {
-    height: 70dvh !important;
+    height: 50dvh !important;
   }
 
   .slider-button {

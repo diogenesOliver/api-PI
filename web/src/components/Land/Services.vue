@@ -10,7 +10,6 @@
           treinamentos focados em hipertrofia. Com as mais modernas e melhores
           técnicas de treinamento, nossa equipe estará pronta para ajudar você a
           atingir o seu resultado desejado.
-          A hipertrofia refere-se ao aumento do tamanho e da força dos músculos do corpo através do treinamento de resistência. Se você está interessado em desenvolver massa muscular e alcançar a hipertrofia, nosso site pode te ajudar.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -24,7 +23,6 @@
           uma boa alimentação para trazer ao seu corpo os nutrientes necessários
           para recuperação múscular. Nossa equipe adaptará uma dieta conforme
           suas necessidades.
-          Uma alimentação equilibrada e saudável desempenha um papel fundamental no emagrecimento. É recomendado consumir alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras, grãos integrais e gorduras saudáveis.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -38,7 +36,6 @@
           Com isso, temos profissionais capaz de adaptar treinamentos conforme
           suas dores e desconfortos, junto com suas lesões, independente do grau
           em que ela estiver.
-          Com o treinamento regular, ocorre um aumento da força muscular. Isso ocorre não apenas devido ao aumento da massa muscular, mas também à melhora da coordenação neuromuscular, recrutamento mais eficiente das fibras musculares e adaptações no sistema nervoso.
         </p>
         <button>
           <a href="#">Inscreva-se</a>

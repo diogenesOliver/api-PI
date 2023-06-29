@@ -10,8 +10,8 @@
           Ganhe mais força e tenha músculos mais resistentes através de
           treinamentos focados em hipertrofia. Com as mais modernas e melhores
           técnicas de treinamento, nossa equipe estará pronta para ajudar você a
-          atingir o seu resultado desejado.
-          Aprenda e aperfeiçoe sua técnica com nossa extensa biblioteca de exercícios. Aqui, você encontrará descrições detalhadas e vídeos instrutivos para uma variedade de exercícios, desde os básicos até os mais avançados, abrangendo diferentes grupos musculares e modalidades de treino.
+          atingir o seu resultado desejado. Aprenda e aperfeiçoe sua técnica com
+          nossa extensa biblioteca de exercícios.
         </p>
       </div>
       <div class="goals-box">
@@ -25,9 +25,11 @@
         <p>
           Para alcançar seus resultados, além de treinamento, você precisará de
           uma boa alimentação para trazer ao seu corpo os nutrientes necessários
-          para recuperação múscular. Nossa equipe adaptará uma dieta conforme
-          suas necessidades.
-          Nosso site reúne uma equipe de especialistas em fitness, nutrição e bem-estar, que compartilham dicas, conselhos e informações relevantes sobre os últimos avanços na área. Descubra receitas saudáveis, tendências de treinamento e muito mais.
+          para recuperação múscular. Nosso site reúne uma equipe de
+          especialistas em fitness, nutrição e bem-estar, que compartilham
+          dicas, conselhos e informações relevantes sobre os últimos avanços na
+          área. Descubra receitas saudáveis, tendências de treinamento e muito
+          mais.
         </p>
       </div>
     </div>
@@ -41,10 +43,11 @@
           <h2>Perda de Peso</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
-          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
-          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt.
-          A perda de peso eficaz requer uma mentalidade positiva e realista. É importante estabelecer metas alcançáveis, manter a motivação e adotar uma abordagem equilibrada em relação à alimentação e ao exercício. Evitar dietas extremas ou restritivas e focar em mudanças de estilo de vida a longo prazo é geralmente mais sustentável.
+          A perda de peso eficaz requer uma mentalidade positiva e realista. É
+          importante estabelecer metas alcançáveis, manter a motivação e adotar
+          uma abordagem equilibrada em relação à alimentação e ao exercício.
+          Evitar dietas extremas ou restritivas e focar em mudanças de estilo de
+          vida a longo prazo é geralmente mais sustentável.
         </p>
       </div>
       <div class="goals-box">
@@ -59,8 +62,9 @@
           Sabemos que lesões e dores podem vir a ser um impeditivo para treinar.
           Com isso, temos profissionais capaz de adaptar treinamentos conforme
           suas dores e desconfortos, junto com suas lesões, independente do grau
-          em que ela estiver.
-          Nossos treinadores especializados desenvolveram uma série de programas de treinamento abrangentes, adequados para iniciantes e experientes. Esses programas são projetados para ajudar você a melhorar sua força, resistência, flexibilidade e alcançar resultados concretos.
+          em que ela estiver. Nossos treinadores especializados desenvolveram
+          uma série de programas de treinamento abrangentes, adequados para
+          iniciantes e experientes.
         </p>
       </div>
     </div>
