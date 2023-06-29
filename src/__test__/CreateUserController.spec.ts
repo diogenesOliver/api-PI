@@ -16,12 +16,13 @@ const userDataFromtest = {
     res_alimentar: "Lactose"
 }
 
-describe('Integration test to create one User by route /login', () => {
+describe('Integration test to create one User by route /register', () => {
     it('Should be return status code 200', async () => {
         const response = await request(app)
-            .post('/login')
+            .post('/register')
             .send(userDataFromtest)
 
+        /* console.log(response) */
         expect(response.status).toEqual(200)
     })
 })
