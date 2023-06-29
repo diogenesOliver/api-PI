@@ -9,10 +9,7 @@
         />
         <h3>Hipertrofia</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam,
-          error impedit sit alias, illum nobis tenetur quisquam fugit unde
-          cupiditate, assumenda consequuntur. Nobis quis facilis dignissimos est
-          numquam, distinctio alias.
+          A hipertrofia refere-se ao aumento do tamanho e da força dos músculos do corpo através do treinamento de resistência. Se você está interessado em desenvolver massa muscular e alcançar a hipertrofia, nosso site pode te ajudar.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -22,10 +19,7 @@
         <img src="@/assets/imgs/lose-w.jpg" alt="" />
         <h3>Emagrecimento</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-          expedita id, sapiente molestias eaque voluptatem libero accusamus
-          voluptatum harum dolor maxime incidunt architecto quis cupiditate
-          fugiat provident iusto nisi iste!
+          Uma alimentação equilibrada e saudável desempenha um papel fundamental no emagrecimento. É recomendado consumir alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras, grãos integrais e gorduras saudáveis.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -38,10 +32,7 @@
         />
         <h3>Adaptação</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-          minus facere consequuntur laboriosam voluptatum, quo animi nulla
-          debitis sed porro qui ea molestias quia temporibus autem tempora dolor
-          voluptates! Minus?
+          Com o treinamento regular, ocorre um aumento da força muscular. Isso ocorre não apenas devido ao aumento da massa muscular, mas também à melhora da coordenação neuromuscular, recrutamento mais eficiente das fibras musculares e adaptações no sistema nervoso.
         </p>
         <button>
           <a href="#">Inscreva-se</a>

@@ -32,8 +32,7 @@
           <div class="welcome">
             <h1>Bem-vindo, Fulano!</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis sint optio voluptatum dolorum expedita temporibus.
+              Prepare-se para desafios, conquistas e um estilo de vida mais saudável!
             </p>
           </div>
         </div>

@@ -3,13 +3,11 @@
     <div class="about-box reveal">
       <h2>Sobre</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-        enim ut nobis, iusto placeat id. Quisquam odio consequatur rem eum
-        tempore, obcaecati eligendi neque molestias minus rerum quod numquam,
-        modi ipsa quaerat pariatur culpa sint eos fugit sequi error esse atque
-        ipsum aliquam. Sunt ipsa ab qui expedita ut, iste fugit rem tempore
-        voluptates, dolor numquam dignissimos facilis exercitationem veniam quam
-        tempora unde. Ea repudiandae dolorem voluptas eveniet porro!
+        Bem-vindo ao "MyFit" - seu destino online para alcançar um estilo de vida saudável e ativo! No MyFit, acreditamos que a boa forma física é essencial para uma vida equilibrada, e nosso site foi projetado para ajudar você a atingir seus objetivos de saúde e condicionamento físico.
+
+        Não importa se você é um novato no mundo fitness ou um atleta experiente, o MyFit está aqui para ajudar você a atingir seus objetivos de maneira eficaz e sustentável.
+
+        Por favor, tenha em mente que esse é um site fictício e não está realmente disponível online. Esta descrição foi criada apenas para fins ilustrativos.
       </p>
     </div>
     <div class="image-box">

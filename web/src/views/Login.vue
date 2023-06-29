@@ -14,8 +14,7 @@
       <div class="title">
         <h2>Conecte-se ao seu perfil</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-          recusandae.
+          Bem-vindo(a)! Faça login para acessar um mundo de oportunidades fitness.
         </p>
       </div>
       <form name="contact" class="contact-inform form">
