@@ -14,11 +14,11 @@ model UserData {
   senha           String
   confirmar_senha String
   nome            String
-  idade           Int
-  peso            Float
-  altura          Float
-  res_fisica      String
-  res_alimentar   String
+  //idade           Int
+  //peso            Float
+  //altura          Float
+  //res_fisica      String
+  //res_alimentar   String
   Exercicios      Exercicios[]
   Alimentacao     Alimentacao[]
 }
