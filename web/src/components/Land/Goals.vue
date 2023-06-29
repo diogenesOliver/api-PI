@@ -7,12 +7,10 @@
           <h2>Treinamentos</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
-          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
-          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
-          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
-          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
-          nesciunt enim perspiciatis earum.
+          Ganhe mais força e tenha músculos mais resistentes através de
+          treinamentos focados em hipertrofia. Com as mais modernas e melhores
+          técnicas de treinamento, nossa equipe estará pronta para ajudar você a
+          atingir o seu resultado desejado.
         </p>
       </div>
       <div class="goals-box">
@@ -24,12 +22,10 @@
           <h2>Alimentação</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
-          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
-          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
-          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
-          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
-          nesciunt enim perspiciatis earum.
+          Para alcançar seus resultados, além de treinamento, você precisará de
+          uma boa alimentação para trazer ao seu corpo os nutrientes necessários
+          para recuperação múscular. Nossa equipe adaptará uma dieta conforme
+          suas necessidades.
         </p>
       </div>
     </div>
@@ -45,10 +41,7 @@
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
           autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
-          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
-          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
-          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
-          nesciunt enim perspiciatis earum.
+          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt.
         </p>
       </div>
       <div class="goals-box">
@@ -60,12 +53,10 @@
           <h2>Adaptação</h2>
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit
-          autem magnam, dolore sequi cum vitae nesciunt possimus non temporibus
-          dolorum animi voluptatem aliquam pariatur harum laborum, incidunt
-          voluptate assumenda? Perferendis mollitia dignissimos at illo impedit
-          dolore, ullam aliquid ut omnis id quibusdam iure odit excepturi
-          nesciunt enim perspiciatis earum.
+          Sabemos que lesões e dores podem vir a ser um impeditivo para treinar.
+          Com isso, temos profissionais capaz de adaptar treinamentos conforme
+          suas dores e desconfortos, junto com suas lesões, independente do grau
+          em que ela estiver.
         </p>
       </div>
     </div>

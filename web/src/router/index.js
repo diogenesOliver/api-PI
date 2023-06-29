@@ -5,6 +5,7 @@ import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import UserForm from '@/views/UserForm.vue'
 import Welcome from '@/views/Welcome.vue'
+import Exercises from '@/views/Exercises.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,12 @@ const routes = [
     path: '/welcome',
     name: 'Welcome',
     component: Welcome
+  },
+
+  {
+    path: '/list',
+    name: 'Exercises',
+    component: Exercises
   }
 ]
 
