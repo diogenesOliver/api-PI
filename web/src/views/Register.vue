@@ -14,8 +14,7 @@
       <div class="title">
         <h2>Cadastre-se</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
-          itaque.
+          Seja parte da nossa comunidade fitness! Cadastre-se agora e comece a sua jornada para uma vida mais saudável e ativa.
         </p>
       </div>
       <form name="contact" class="contact-inform form">

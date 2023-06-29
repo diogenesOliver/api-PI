@@ -3,6 +3,7 @@
     <div class="about-box reveal">
       <h2>Sobre</h2>
       <p>
+<<<<<<< HEAD
         Fundado em 2023, a <strong>MyFit</strong> tem a missão de ser um lugar
         onde qualquer um poderá chegar, mudar seu estilo de vida, se sentir
         melhor e mais saudável. Se preocupando além da saúde física, nossa
@@ -16,6 +17,13 @@
         temos planos e adaptações feitas para você conseguir o máximo possível
         se sentir bem, facilitando para você atingir o quanto antes o seu
         resultado esperado.
+=======
+        Bem-vindo ao "MyFit" - seu destino online para alcançar um estilo de vida saudável e ativo! No MyFit, acreditamos que a boa forma física é essencial para uma vida equilibrada, e nosso site foi projetado para ajudar você a atingir seus objetivos de saúde e condicionamento físico.
+
+        Não importa se você é um novato no mundo fitness ou um atleta experiente, o MyFit está aqui para ajudar você a atingir seus objetivos de maneira eficaz e sustentável.
+
+        Por favor, tenha em mente que esse é um site fictício e não está realmente disponível online. Esta descrição foi criada apenas para fins ilustrativos.
+>>>>>>> a304dc4a2614959ea4f8d0a3e8ec47e43744258b
       </p>
     </div>
     <div class="image-box">

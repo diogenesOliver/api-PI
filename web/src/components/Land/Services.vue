@@ -6,10 +6,14 @@
         <img src="@/assets/imgs/5.jpg" alt="" />
         <h3>Hipertrofia</h3>
         <p>
+<<<<<<< HEAD
           Ganhe mais força e tenha músculos mais resistentes através de
           treinamentos focados em hipertrofia. Com as mais modernas e melhores
           técnicas de treinamento, nossa equipe estará pronta para ajudar você a
           atingir o seu resultado desejado.
+=======
+          A hipertrofia refere-se ao aumento do tamanho e da força dos músculos do corpo através do treinamento de resistência. Se você está interessado em desenvolver massa muscular e alcançar a hipertrofia, nosso site pode te ajudar.
+>>>>>>> a304dc4a2614959ea4f8d0a3e8ec47e43744258b
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -19,10 +23,14 @@
         <img src="@/assets/imgs/lose-w.jpg" alt="" />
         <h3>Emagrecimento</h3>
         <p>
+<<<<<<< HEAD
           Para alcançar seus resultados, além de treinamento, você precisará de
           uma boa alimentação para trazer ao seu corpo os nutrientes necessários
           para recuperação múscular. Nossa equipe adaptará uma dieta conforme
           suas necessidades.
+=======
+          Uma alimentação equilibrada e saudável desempenha um papel fundamental no emagrecimento. É recomendado consumir alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras, grãos integrais e gorduras saudáveis.
+>>>>>>> a304dc4a2614959ea4f8d0a3e8ec47e43744258b
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -32,10 +40,14 @@
         <img src="@/assets/imgs/1.jpg" alt="" />
         <h3>Adaptação</h3>
         <p>
+<<<<<<< HEAD
           Sabemos que lesões e dores podem vir a ser um impeditivo para treinar.
           Com isso, temos profissionais capaz de adaptar treinamentos conforme
           suas dores e desconfortos, junto com suas lesões, independente do grau
           em que ela estiver.
+=======
+          Com o treinamento regular, ocorre um aumento da força muscular. Isso ocorre não apenas devido ao aumento da massa muscular, mas também à melhora da coordenação neuromuscular, recrutamento mais eficiente das fibras musculares e adaptações no sistema nervoso.
+>>>>>>> a304dc4a2614959ea4f8d0a3e8ec47e43744258b
         </p>
         <button>
           <a href="#">Inscreva-se</a>
