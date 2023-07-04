@@ -16,7 +16,8 @@
 - [Rotas](#rotas)
 - [Database](#database)
 - [Configurações do projeto](#execute)
-- [Arquitetura do projeto](#wip)
+- [Arquitetura do projeto](#clean-arcitecture)
+- [Testes de integração](#testes)
 
 <div id="api">
 
