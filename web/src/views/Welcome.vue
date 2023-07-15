@@ -38,10 +38,7 @@
           </div>
         </div>
         <div class="avatar-card">
-          <img
-            src="https://avatars.githubusercontent.com/u/22033274?v=4"
-            alt=""
-          />
+          <img src="https://avatars.githubusercontent.com/u/22033274?v=4" alt="" />
           <h3>Fulano de Tal</h3>
           <p>Idade: 24</p>
           <p>Peso: 68kg</p>
@@ -79,8 +76,18 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "Welcome",
+
+  mounted() {
+    try {
+      axios.get('http://localhost:3000/users').then(res => {
+        console.log(res.data)
+      })
+    } catch (err) { console.log(err) }
+  }
 };
 </script>
 
@@ -202,33 +209,27 @@ a:hover {
 }
 
 .workout {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+      rgba(0, 0, 0, 0.4)),
     url("https://images.unsplash.com/photo-1606889464198-fcb18894cf50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=790&q=80");
   background-size: cover;
   background-position: center;
 }
 
 .food {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+      rgba(0, 0, 0, 0.4)),
     url("https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   background-size: cover;
   background-position: center;
 }
 
 .evolution {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+      rgba(0, 0, 0, 0.4)),
     url("https://images.unsplash.com/photo-1583500179017-12d75b04e351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
   background-size: cover;
   background-position: center;
