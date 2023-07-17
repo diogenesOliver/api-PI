@@ -10,10 +10,11 @@ export class UserLoginController {
         const inputData: UserData = req.body
         const findUserEmail = await this.userLoginService.findUser(inputData.email)
 
-        if (findUserEmail == null)
-            res.status(404).send('Password or Email incorrect')
+        if (findUserEmail == null || inputData.senha != findUserEmail.senha)
+            res.status(404).json({msg: "ERROR on password or Email"})
 
         res.status(200).send(findUserEmail)
+        console.log(findUserEmail)
         return {
             findUserEmail,
             statusCode: 200
