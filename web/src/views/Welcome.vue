@@ -32,8 +32,8 @@
           <div class="welcome">
             <h1>Bem-vindo, Fulano!</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis sint optio voluptatum dolorum expedita temporibus.
+              Prepare-se para desafios, conquistas e um estilo de vida mais
+              saudável!
             </p>
           </div>
         </div>
@@ -289,6 +289,8 @@ button:hover {
 
   .cards {
     display: block;
+    background: #fff;
+    width: 100%;
   }
 
   .workout,
@@ -299,8 +301,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     min-height: 45vh;
-    width: 100%;
+    width: 80%;
     padding: 0 1rem;
+    margin: 1.5rem auto;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
@@ -308,6 +311,10 @@ button:hover {
     color: #fff;
     transition: 0.2s;
     cursor: pointer;
+  }
+
+  .evolution {
+    margin-bottom: 0;
   }
 
   .workout p,

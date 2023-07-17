@@ -3,16 +3,13 @@
     <h2>Serviços</h2>
     <div class="services">
       <div class="services-box">
-        <img
-          src="@/assets/imgs/5.jpg"
-          alt=""
-        />
+        <img src="@/assets/imgs/5.jpg" alt="" />
         <h3>Hipertrofia</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam,
-          error impedit sit alias, illum nobis tenetur quisquam fugit unde
-          cupiditate, assumenda consequuntur. Nobis quis facilis dignissimos est
-          numquam, distinctio alias.
+          Ganhe mais força e tenha músculos mais resistentes através de
+          treinamentos focados em hipertrofia. Com as mais modernas e melhores
+          técnicas de treinamento, nossa equipe estará pronta para ajudar você a
+          atingir o seu resultado desejado.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -22,26 +19,23 @@
         <img src="@/assets/imgs/lose-w.jpg" alt="" />
         <h3>Emagrecimento</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-          expedita id, sapiente molestias eaque voluptatem libero accusamus
-          voluptatum harum dolor maxime incidunt architecto quis cupiditate
-          fugiat provident iusto nisi iste!
+          Para alcançar seus resultados, além de treinamento, você precisará de
+          uma boa alimentação para trazer ao seu corpo os nutrientes necessários
+          para recuperação múscular. Nossa equipe adaptará uma dieta conforme
+          suas necessidades.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
         </button>
       </div>
       <div class="services-box">
-        <img
-          src="@/assets/imgs/1.jpg"
-          alt=""
-        />
+        <img src="@/assets/imgs/1.jpg" alt="" />
         <h3>Adaptação</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-          minus facere consequuntur laboriosam voluptatum, quo animi nulla
-          debitis sed porro qui ea molestias quia temporibus autem tempora dolor
-          voluptates! Minus?
+          Sabemos que lesões e dores podem vir a ser um impeditivo para treinar.
+          Com isso, temos profissionais capaz de adaptar treinamentos conforme
+          suas dores e desconfortos, junto com suas lesões, independente do grau
+          em que ela estiver.
         </p>
         <button>
           <a href="#">Inscreva-se</a>
@@ -75,7 +69,6 @@ h2 {
 
 .services-box {
   padding: 1.5rem;
-  height: 100%;
 }
 
 h3 {

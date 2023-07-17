@@ -3,13 +3,19 @@
     <div class="about-box reveal">
       <h2>Sobre</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quae
-        enim ut nobis, iusto placeat id. Quisquam odio consequatur rem eum
-        tempore, obcaecati eligendi neque molestias minus rerum quod numquam,
-        modi ipsa quaerat pariatur culpa sint eos fugit sequi error esse atque
-        ipsum aliquam. Sunt ipsa ab qui expedita ut, iste fugit rem tempore
-        voluptates, dolor numquam dignissimos facilis exercitationem veniam quam
-        tempora unde. Ea repudiandae dolorem voluptas eveniet porro!
+        Fundado em 2023, a <strong>MyFit</strong> tem a missão de ser um lugar
+        onde qualquer um poderá chegar, mudar seu estilo de vida, se sentir
+        melhor e mais saudável. Se preocupando além da saúde física, nossa
+        equipe olha sempre além do horizonte, combinando os melhores
+        equipamentos e, também, apoio ao cliente, com questões psicológicas e
+        alimentares.
+      </p>
+
+      <p>
+        Sabemos que manter a constância pode ser um desafio enorme. Por isso,
+        temos planos e adaptações feitas para você conseguir o máximo possível
+        se sentir bem, facilitando para você atingir o quanto antes o seu
+        resultado esperado.
       </p>
     </div>
     <div class="image-box">
@@ -54,7 +60,6 @@ h2 {
 p {
   margin-top: 1rem;
   max-width: 90%;
-  line-height: 1.5rem;
   letter-spacing: 1px;
   text-align: justify;
   font-weight: 500;
@@ -141,21 +146,22 @@ img {
 
 @media screen and (min-width: 931px) and (max-width: 1366px) {
   section {
-    height: 70dvh !important;
+    height: 65dvh !important;
     margin: 2rem auto;
     width: 100%;
   }
 
   .about-box {
     width: 45%;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
   }
 
   .image-box {
     top: 2rem;
     position: relative;
-    width: 35%;
-    right: 2rem;
+    width: 40%;
+    height: 80%;
+    right: 0.65rem;
   }
 
   img {

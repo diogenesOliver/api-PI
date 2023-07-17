@@ -14,8 +14,8 @@
       <div class="title">
         <h2>Conecte-se ao seu perfil</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-          recusandae.
+          Bem-vindo(a)! Faça login para acessar um mundo de oportunidades
+          fitness.
         </p>
       </div>
       <form name="contact" class="contact-inform form">
@@ -131,7 +131,7 @@ p {
 
 .contact-inform {
   width: 50%;
-  min-height: 47%;
+  min-height: 50%;
   padding: 4rem 2rem 2rem;
   border-radius: 0.25rem;
   color: black;
@@ -235,7 +235,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 80%;
+  width: 85%;
   padding: 0.5rem 1rem;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
@@ -263,7 +263,7 @@ p {
 
 input[type="submit"] {
   padding: 0.6rem 1rem;
-  width: 80%;
+  width: 85%;
   background: #151515;
   color: #fff;
   font-weight: 700;
