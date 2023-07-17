@@ -20,7 +20,7 @@
       </div>
       <form name="contact" class="contact-inform form">
         <div class="form-control">
-          <input type="email" class="form-input" placeholder="none" required />
+          <input type="email" class="form-input" placeholder="none" v-model="userDataLogin.email" required />
           <label for="name" class="form-label">E-mail</label>
         </div>
         <div class="form-control">
@@ -29,13 +29,14 @@
             name="password"
             class="form-input"
             placeholder="none"
+            v-model="userDataLogin.senha"
             required
           />
           <label for="password" class="form-label">Senha</label>
         </div>
         <div class="submit-button">
           <div class="buttons-box">
-            <input type="submit" value="Entrar" />
+            <input type="submit" @click="userLogin()" value="Entrar" />
           </div>
           <p>Ou</p>
           <div class="buttons-box">
@@ -54,8 +55,30 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: "Login",
+
+  data(){
+    return {
+      userDataLogin: {
+        email: "",
+        senha: ""
+      }
+    }
+  },
+
+  methods: {
+    async userLogin(){
+      try{
+        await axios.post('http://localhost:3000/login', this.userDataLogin).then(res => {
+          console.log(res.data)
+        })
+      }catch(err){console.log(err) }
+    }
+  }
+
 };
 </script>
 

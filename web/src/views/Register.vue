@@ -1,11 +1,7 @@
 <template>
   <section>
     <router-link to="/">
-      <img
-        class="close-icon"
-        src="@/assets/icons/close_white_48dp.svg"
-        alt=""
-      />
+      <img class="close-icon" src="@/assets/icons/close_white_48dp.svg" alt="" />
     </router-link>
     <div class="img-box">
       <img src="@/assets/imgs/woman-background.jpg" alt="" />
@@ -19,70 +15,40 @@
       </div>
       <form name="contact" class="contact-inform form">
         <div class="form-control">
-          <input
-            type="text"
-            name="name"
-            class="form-input"
-            placeholder="none"
-            required
-          />
+          <input type="text" name="name" class="form-input" placeholder="none" v-model="userData.nome" required />
           <label for="name" class="form-label">Nome</label>
         </div>
         <div class="input-columns">
           <div class="form-control">
-            <input
-              type="email"
-              name="email"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input type="email" name="email" class="form-input" placeholder="none" v-model="userData.email" required />
             <label for="email" class="form-label">Email</label>
           </div>
           <div class="form-control">
-            <input
-              type="email"
-              name="email"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input type="email" name="email" class="form-input" placeholder="none" v-model="userData.confirmar_email"
+              required />
             <label for="email" class="form-label">Confirmar E-mail</label>
           </div>
         </div>
         <div class="input-columns">
           <div class="form-control">
-            <input
-              type="password"
-              name="password"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input type="password" name="password" class="form-input" placeholder="none" v-model="userData.senha"
+              required />
             <label for="password" class="form-label">Senha</label>
           </div>
           <div class="form-control">
-            <input
-              type="password"
-              name="password"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input type="password" name="password" class="form-input" placeholder="none"
+              v-model="userData.confirmar_senha" required />
             <label for="password" class="form-label">Confirmar Senha</label>
           </div>
         </div>
         <div class="submit-button">
           <div class="buttons-box">
-            <input type="submit" value="Cadastrar" />
+            <input type="submit" value="Cadastrar" @click.prevent="createUsers()" />
           </div>
           <p>Ou</p>
           <div class="buttons-box">
             <button>
-              <img
-                src="https://www.vectorlogo.zone/logos/google/google-icon.svg"
-                alt=""
-              />
+              <img src="https://www.vectorlogo.zone/logos/google/google-icon.svg" alt="" />
               Entre com o Google
             </button>
           </div>
@@ -93,8 +59,32 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "Register",
+
+  data() {
+    return {
+      userData: {
+        nome: "",
+        email: "",
+        confirmar_email: "",
+        senha: "",
+        confirmar_senha: ""
+      }
+    }
+  },
+
+  methods: {
+    async createUsers() {
+      try {
+        await axios.post('http://localhost:3000/register', this.userData)
+        this.$router.push('/user-form')
+        console.log('Usuário cadastrado com sucesso')
+      } catch (err) { console.log(err) }
+    }
+  }
 };
 </script>
 
@@ -211,7 +201,7 @@ p {
   border: 2px solid #fff;
 }
 
-.form-input:focus ~ .form-label {
+.form-input:focus~.form-label {
   top: -0.75rem;
   left: 1rem;
   z-index: 5;
@@ -221,7 +211,7 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
   top: -0.75rem;
   left: 1rem;
   z-index: 9;
