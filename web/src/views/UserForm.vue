@@ -6,11 +6,7 @@
       </div>
       <div class="login">
         <router-link to="/">
-          <img
-            class="close-icon"
-            src="@/assets/icons/close_white_48dp.svg"
-            alt=""
-          />
+          <img class="close-icon" src="@/assets/icons/close_white_48dp.svg" alt="" />
         </router-link>
       </div>
     </header>
@@ -25,49 +21,21 @@
       <form class="contact-inform form">
         <div class="input-columns">
           <div class="form-control">
-            <input
-              v-model="user.height"
-              v-mask="'#.##m'"
-              type="text"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input v-model="user.height" v-mask="'#.##m'" type="text" class="form-input" placeholder="none" required />
             <label for="email" class="form-label">Altura</label>
           </div>
           <div class="form-control">
-            <input
-              v-model="user.weight"
-              v-mask="'##.#kg'"
-              type="text"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input v-model="user.weight" v-mask="'##.#kg'" type="text" class="form-input" placeholder="none" required />
             <label for="email" class="form-label">Peso</label>
           </div>
         </div>
         <div class="input-columns">
           <div class="form-control">
-            <input
-              v-model="user.age"
-              v-mask="'##'"
-              type="text"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input v-model="user.age" v-mask="'##'" type="text" class="form-input" placeholder="none" required />
             <label for="email" class="form-label">Idade</label>
           </div>
           <div class="form-control">
-            <input
-              v-model="user.idk"
-              v-mask="'##.#kg'"
-              type="text"
-              class="form-input"
-              placeholder="none"
-              required
-            />
+            <input type="text" class="form-input" placeholder="none" required />
             <label for="email" class="form-label">A decidir</label>
           </div>
         </div>
@@ -76,30 +44,15 @@
         </div>
         <div class="food-group">
           <div class="input-box">
-            <input
-              type="radio"
-              name="food-radio"
-              id="carnivore"
-              v-model="isCarnivore"
-            />
+            <input type="radio" name="food-radio" id="carnivore" />
             <label for="carnivore">Carnivoro</label>
           </div>
           <div class="input-box">
-            <input
-              type="radio"
-              name="food-radio"
-              id="vegetarian"
-              v-model="isVeg"
-            />
+            <input type="radio" name="food-radio" id="vegetarian" />
             <label for="vegetarian">Vegetariano</label>
           </div>
           <div class="input-box">
-            <input
-              type="radio"
-              name="food-radio"
-              id="vegan"
-              v-model="isVegan"
-            />
+            <input type="radio" name="food-radio" id="vegan" />
             <label for="vegan">Vegano</label>
           </div>
         </div>
@@ -126,13 +79,15 @@
         </div>
       </form>
       <div class="button-box">
-        <button class="register-button">Continuar</button>
+        <button class="register-button" @click="userForm().prevent">Continuar</button>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "UserForm",
 
@@ -141,9 +96,32 @@ export default {
       user: {
         height: "",
         weight: "",
+        age: ""
       },
     };
   },
+
+  methods: {
+    async getUser() {
+      try {
+        await axios.get('http://localhost:3000/users/65').then(res => {
+          console.log(res.data)
+        })
+      } catch (err) { console.log(e) }
+    },
+
+    async userForm() {
+      try {
+        await axios.post('http://localhost:3000/register', this.user)
+        console.log('Finlizado o formulário')
+      } catch (err) { console.log(err) }
+    }
+  },
+
+  mounted(){
+    this.getUser()
+  }
+
 };
 </script>
 
@@ -252,7 +230,7 @@ header {
   border: 2px solid #fff;
 }
 
-.form-input:focus ~ .form-label {
+.form-input:focus~.form-label {
   top: -0.75rem;
   left: 1rem;
   z-index: 5;
@@ -262,7 +240,7 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
   top: -0.75rem;
   left: 1rem;
   z-index: 9;

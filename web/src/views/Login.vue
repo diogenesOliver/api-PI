@@ -36,7 +36,7 @@
         </div>
         <div class="submit-button">
           <div class="buttons-box">
-            <input type="submit" @click="userLogin()" value="Entrar" />
+            <input type="submit" @click.prevent="userLogin()"  value="Entrar" />
           </div>
           <p>Ou</p>
           <div class="buttons-box">
@@ -73,7 +73,11 @@ export default {
     async userLogin(){
       try{
         await axios.post('http://localhost:3000/login', this.userDataLogin).then(res => {
-          console.log(res.data)
+          if(!(this.userDataLogin.email === res.data.email)){
+            alert('Invalid email or password')
+          }else{
+            this.$router.push(`/user-form/${res.data.id}`)
+          }
         })
       }catch(err){console.log(err) }
     }
