@@ -30,7 +30,9 @@
       <div class="d-flex-box">
         <div class="title-box">
           <div class="welcome">
-            <h1>Bem-vindo, Fulano!</h1>
+            <div v-for="user in userData" :key="user.id">
+              <h1>Bem-vindo, {{ user.id }}!</h1>
+            </div>
             <p>
               Prepare-se para desafios, conquistas e um estilo de vida mais
               saudável!
@@ -39,9 +41,11 @@
         </div>
         <div class="avatar-card">
           <img src="https://avatars.githubusercontent.com/u/22033274?v=4" alt="" />
-          <h3>Fulano de Tal</h3>
-          <p>Idade: 24</p>
-          <p>Peso: 68kg</p>
+          <div v-for="user in userData" :key="user.id">
+            <h3>{{ user.nome }}</h3>
+            <p>Idade: {{ user.idade }}</p>
+            <p>Peso: {{ user.peso }}</p>
+          </div>
         </div>
       </div>
       <div class="box">
@@ -81,12 +85,25 @@ import axios from 'axios';
 export default {
   name: "Welcome",
 
+  data() {
+    return {
+      userData: []
+    }
+  },
+
+  methods: {
+    getUsers() {
+      try {
+        axios.get(`http://localhost:3000/users`).then((res) => {
+          this.userData = res.data
+          console.log(res.data)
+        })
+      } catch (err) { console.log(err) }
+    }
+  },
+
   mounted() {
-    try {
-      axios.get('http://localhost:3000/users').then(res => {
-        console.log(res.data)
-      })
-    } catch (err) { console.log(err) }
+    this.getUsers()
   }
 };
 </script>

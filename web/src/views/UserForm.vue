@@ -79,7 +79,7 @@
         </div>
       </form>
       <div class="button-box">
-        <button class="register-button" @click="userForm().prevent">Continuar</button>
+        <button class="register-button" @click.prevent="userForm()">Continuar</button>
       </div>
     </div>
   </section>
@@ -113,7 +113,7 @@ export default {
     async userForm() {
       try {
         await axios.post('http://localhost:3000/register', this.user)
-        console.log('Finlizado o formulário')
+        console.log('Finalizado o formulário')
       } catch (err) { console.log(err) }
     }
   },

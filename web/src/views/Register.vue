@@ -20,6 +20,22 @@
         </div>
         <div class="input-columns">
           <div class="form-control">
+            <input v-model="userData.idade" v-mask="'##'" type="text" class="form-input" placeholder="none" required />
+            <label for="email" class="form-label">Idade</label>
+          </div>
+        </div>
+        <div class="input-columns">
+          <div class="form-control">
+            <input v-model="userData.altura" v-mask="'#.##m'" type="text" class="form-input" placeholder="none" required />
+            <label for="email" class="form-label">Altura</label>
+          </div>
+          <div class="form-control">
+            <input v-model="userData.peso" v-mask="'##.#kg'" type="text" class="form-input" placeholder="none" required />
+            <label for="email" class="form-label">Peso</label>
+          </div>
+        </div>
+        <div class="input-columns">
+          <div class="form-control">
             <input type="email" name="email" class="form-input" placeholder="none" v-model="userData.email" required />
             <label for="email" class="form-label">Email</label>
           </div>
@@ -40,6 +56,7 @@
               v-model="userData.confirmar_senha" required />
             <label for="password" class="form-label">Confirmar Senha</label>
           </div>
+
         </div>
         <div class="submit-button">
           <div class="buttons-box">
@@ -71,7 +88,10 @@ export default {
         email: "",
         confirmar_email: "",
         senha: "",
-        confirmar_senha: ""
+        confirmar_senha: "",
+        idade: "",
+        peso: "",
+        altura: ""
       }
     }
   },
@@ -80,7 +100,7 @@ export default {
     async createUsers() {
       try {
         await axios.post('http://localhost:3000/register', this.userData)
-        this.$router.push('/user-form')
+        this.$router.push('/login')
         console.log('Usuário cadastrado com sucesso')
       } catch (err) { console.log(err) }
     }

@@ -17,7 +17,11 @@ routes.post('/login', (req: Request, res: Response) => {
     return userLoginIstance.userAuthentication(req, res)
 })
 
-routes.get('/users/:id', (req: Request, res: Response) => {
+routes.get('/users', (req: Request, res: Response) => {
+    return getUserInstance.getUserController(req, res)
+})
+
+routes.get(`/users/:id`, (req: Request, res: Response) => {
     return getUserInstance.getUserController(req, res)
 })
 

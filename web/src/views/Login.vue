@@ -72,11 +72,11 @@ export default {
   methods: {
     async userLogin(){
       try{
-        await axios.post('http://localhost:3000/login', this.userDataLogin).then(res => {
+        await axios.post(`http://localhost:3000/login`, this.userDataLogin).then(res => {
           if(!(this.userDataLogin.email === res.data.email)){
             alert('Invalid email or password')
           }else{
-            this.$router.push(`/user-form/${res.data.id}`)
+            this.$router.push('/welcome')
           }
         })
       }catch(err){console.log(err) }

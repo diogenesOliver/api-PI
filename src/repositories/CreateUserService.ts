@@ -6,8 +6,8 @@ export class CreateUserService implements ISaveFunctionGeneric<UserData>{
         await PrismaClietInstance.userData.create({
             data: data,
             include: {
-                Exercicios: true,
-                Alimentacao: true
+                Exercicios: false,
+                Alimentacao: false
             }
         })
         return data
